@@ -2,24 +2,20 @@
 come database:gli utenti potranno aggiungere alunni e voti, modificare alunni e 
 voti, eliminare alunni e voti, visualizzare gli alunni presenti"""
 
-alunni = {}
+matrice = ["nome", "cognome" ,"voti"]
+voti = []
 while True:
-    nome = input("Nome alunno (o 'media' per finire): ")
-    if nome == "media":
-        break
-    if nome not in alunni:
-        alunni[nome] = []
-    else:
-        print("Nome già presente")
-        continue
-while True:
-    voto = input(f"Inserisci un voto per {nome} ('fine' per cambiare alunno): ")
-    if voto == "fine":
-        break
-    alunni[nome].append(float(voto))
-    for nome in alunni:
-        media = sum(alunni[nome]) / len(alunni[nome])
-    print(f"Nome: {nome}, Media: {media}")
-    
-    with open("Studenti.txt", "w") as file:
-        file.write("Studenti.txt")
+    nome = input("inserisci un nome: ")
+    cogn = input("inserisci un cognome: ")
+    while True:
+        voto_s = input("inserisci un voto oppure fine: ")
+        if voto_s == "fine": 
+            break
+        voti.append(voto_s)
+        print(voti)
+    studente = [nome, cogn, voti]
+    matrice.append(studente)
+    print(matrice)
+
+with open("studenti.txt" ,"w") as file:
+    contenuto = file.write()
