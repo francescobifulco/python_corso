@@ -322,13 +322,30 @@ entrambi "FizzBuzz"."""
 
 """Chiedi un numero all’utente e stampa tutti i suoi divisori."""
 
-numero = int(input("inserisci un numero: "))
+"""numero = int(input("inserisci un numero: "))
 
 for divisi in range(1,numero+1):
-    if numero % divisi == 0: print(f"il {numero} e divisibile per {divisi}")
+    if numero % divisi == 0: print(f"il {numero} e divisibile per {divisi}")"""
 
 """Scrivi un programma che verifica se una parola è palindroma."""
 
-parola = input("inserisci una parola: ")
+"""parola = input("inserisci una parola: ")
+if parola == parola[::-1]: print("pelindroma")
+else: print("non e palindroma")"""
 
 """Calcola la somma di tutti i numeri dispari da 1 a 100."""
+
+somma=0
+for i in range(1,101):
+    if i % 2 != 0: somma = i + somma
+print(somma)
+
+"""Chiedi all’utente di inserire 5 numeri e memorizzali in una lista. Stampa la lista in ordine crescente.
+
+Conta quante volte appare un elemento in una lista predefinita.
+
+Scrivi un programma che trova il valore massimo e minimo in una lista.
+
+Rimuovi i duplicati da una lista senza usare set.
+
+Data una lista di numeri, crea una nuova lista contenente solo i numeri pari."""
