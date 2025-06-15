@@ -335,17 +335,123 @@ else: print("non e palindroma")"""
 
 """Calcola la somma di tutti i numeri dispari da 1 a 100."""
 
-somma=0
+"""somma=0
 for i in range(1,101):
     if i % 2 != 0: somma = i + somma
-print(somma)
+print(somma)"""
 
-"""Chiedi all’utente di inserire 5 numeri e memorizzali in una lista. Stampa la lista in ordine crescente.
+"""Chiedi all’utente di inserire 5 numeri e memorizzali in una 
+lista. Stampa la lista in ordine crescente."""
 
-Conta quante volte appare un elemento in una lista predefinita.
+"""lista = []
 
-Scrivi un programma che trova il valore massimo e minimo in una lista.
+for i in range(5):
+    numeri = input("inserisci un numero:")
+    lista.append(numeri)
+    lista.sort()
+print(lista)"""
 
-Rimuovi i duplicati da una lista senza usare set.
+"""Esercizi sulle Collezioni e gli Indici Esercizio 1: Accesso agli
+Elementi di una Lista Data la seguente lista di frutta: 
+frutta = ["mela", "banana","ciliegia", "kiwi", "arancia"]
+* Accedi e stampa il secondoelemento della lista.
+* Accedi e stampa l'ultimo elemento della lista utilizzando
+un indice negativo.
+* Prova ad accedere a un indice che non esiste nella lista. Cosa
+succede? (Non devi gestirel'errore, solo descrivere cosa accade)."""
 
-Data una lista di numeri, crea una nuova lista contenente solo i numeri pari."""
+"""frutta = ["mela", "banana", "ciliegia", "kiwi", "arancia"]
+print(frutta[1])
+print(frutta[-1])
+print(frutta[7])"""
+
+"""Esercizio 2:Manipolazione di Stringhe con Indici 
+Data la seguente stringa: saluto = "Ciao Mondo!"
+* Stampa il primo carattere della stringa.
+* Stampa l'ultimo carattere della stringa.
+* Utilizza lo "slicing" per stampare solo la parola "Mondo".
+* Utilizza lo "slicing" per stampare la stringa al contrario."""
+
+"""saluto = "Ciao Mondo!"
+print(saluto[0])
+print(saluto[-1])
+print(saluto[5:10])
+print(saluto[::-1])"""
+
+"""Esercizio 3: Modifica di Elementi in una Lista Data la seguente lista di numeri:
+numeri = [10, 20, 30, 40, 50]
+* Modifica il terzo elemento della lista (l'elemento con valore 30) in 35.
+* Aggiungi un nuovo elemento (ad esempio, 60) alla fine della 
+lista senza usare append() ma assegnandolo direttamente a un 
+indice. (Suggerimento: dovrai prima estendere la lista o sapere 
+quale sarà la sua dimensione finale).
+* Modifica i primi due elementi della lista in 5 e 15."""
+ 
+"""numeri = [10, 20, 30, 40, 50]
+numeri.remove(30)
+print(numeri)
+numeri.insert(2,35)
+print(numeri)
+numeri.insert(5,60)
+print(numeri)
+numeri[0] = 5
+numeri[1] = 15
+print(numeri)"""
+
+"""Esercizio 4: Trovare l'Indice di un Elemento Data la seguente lista di colori:
+colori = ["rosso", "verde", "blu", "giallo", "blu"]
+Trova e stampa l'indice della prima occorrenza del colore "blu".
+Prova a trovare l'indice di un colore che non è presente nella lista 
+(es. "viola"). Cosa succede?"""
+
+"""colori = ["rosso", "verde", "blu", "giallo", "blu"]
+for i in colori:
+    if i == "blu":
+        indice = colori.index("blu")
+        indice1 = colori.index("viola")
+print(indice)
+print(indice1)"""
+
+"""Esercizio 5: Inserimento di Elementi in una Posizione Specifica
+Data la seguente lista di animali:animali = ["cane", "gatto", 
+"leone"] Inserisci "elefante" tra "gatto" e "leone" utilizzando 
+l'indice corretto.Inserisci "tigre" all'inizio della lista."""
+
+"""animali = ["cane", "gatto", "leone"]
+animali.insert(2,"elefante")
+print(animali)"""
+
+"""Esercizio 6: Conteggio di Occorrenze e Indice
+Data la seguente stringa di testo: testo = "Python è un 
+linguaggio di programmazione molto popolare. Python è versatile. 
+Conta quante volte la parola "Python" appare nella stringa (nota: 
+la ricerca deve essere case-sensitive, quindi "python" non conta). 
+Non usare il metodo count() della stringa. Suggerimento: potresti 
+aver bisogno di iterare sulla stringa e usare slicing o trovare 
+l'indice delle occorrenze.
+Trova l'indice di tutte le occorrenze della lettera 'o' 
+(minuscola) nella stringa. Stampa una lista di questi indici." """
+
+"""testo = "Python è un linguaggio di programmazione molto popolare. Python è versatile."
+coteggio = 0
+lista = testo.split()
+for el in lista:
+    if el == "Python":
+        coteggio += 1
+print(f"la parola 'Python' conpare volte: {coteggio}")
+
+indici = []
+lista_ = list(testo)
+for e in range(len(lista_)):
+    if lista_[e] == "o":
+        indici.append(e)
+print(indici)"""
+
+"""Esercizio 7: Inversione di Liste e Stringhe
+Inverti la seguente lista di numeri senza usare il metodo 
+reverse() o lo slicing [::-1]. Devi manipolare gli elementi 
+usando gli indici.
+numeri_da_invertire = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Inverti la seguente stringa, carattere per carattere, senza usare 
+lo slicing [::-1].
+stringa_da_invertire = "programmazione" """
