@@ -583,7 +583,7 @@ scrivi un programma che conti il numero di righe presenti nel
 file.
 Stampa il numero di righe."""
 
-testo = """Buchi Neri: Un Viaggio nel Mistero dello Spazio
+"""testo = "Buchi Neri: Un Viaggio nel Mistero dello Spazio
 I buchi neri sono tra i fenomeni più affascinanti e misteriosi 
 dell'universo. Immagina di comprimere una quantità enorme di 
 materia in uno spazio estremamente piccolo. Questo è, in 
@@ -596,7 +596,7 @@ invisibile, ma la sua presenza può essere rilevata grazie agli
 effetti che ha sull'ambiente circostante, influenzando il 
 movimento delle stelle vicine o emettendo raggi X quando 
 ingloba materia. Studiare i buchi neri ci aiuta a comprendere 
-meglio le leggi della fisica e la natura stessa dell'universo."""
+meglio le leggi della fisica e la natura stessa dell'universo."
 
 with open("testo.txt" ,"w") as file:
         file.write(testo)
@@ -608,4 +608,19 @@ lista_testo = testo.split()
 print(len(lista_testo))
 
 righe = contenuto.split("\n")
-print(f"numero di righe: {len(righe)}")
+print(f"numero di righe: {len(righe)}")"""
+
+#Scrittura di una lista su un file:
+"""Hai una lista di nomi: nomi = 
+["Alice", "Bob", "Charlie", "David"].
+Scrivi un programma che salvi ogni nome di questa lista su una 
+riga separata in un file chiamato nomi.txt."""
+
+nomi = ["Alice", "Bob", "Charlie", "David"]
+
+with open("nomi.txt" ,"w") as file:
+    for nome in nomi:
+        file.write(nome + "\n")
+with open("nomi.txt", "r") as file:
+    contenuto = file.read()
+    print(contenuto)
