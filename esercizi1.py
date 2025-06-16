@@ -616,11 +616,12 @@ print(f"numero di righe: {len(righe)}")"""
 Scrivi un programma che salvi ogni nome di questa lista su una 
 riga separata in un file chiamato nomi.txt."""
 
-nomi = ["Alice", "Bob", "Charlie", "David"]
+"""nomi = ["Alice", "Bob", "Charlie", "David"]
 
 with open("nomi.txt" ,"w") as file:
     for nome in nomi:
         file.write(nome + "\n")
 with open("nomi.txt", "r") as file:
     contenuto = file.read()
-    print(contenuto)
+    print(contenuto)"""
+
