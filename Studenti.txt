@@ -1,1 +1,3 @@
-Studenti.txt
+['nome']
+['cognome']
+['voto']
