@@ -625,3 +625,4 @@ with open("nomi.txt", "r") as file:
     contenuto = file.read()
     print(contenuto)"""
 
+#
