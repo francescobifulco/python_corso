@@ -1,1 +1,0 @@
-Un'immagine fotorealistica di ${location} con condizioni meteo ${conditions}, che mostra una vista suggestiva di un punto di riferimento della città dalle strade, con un'illuminazione calda e dorata.
