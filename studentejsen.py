@@ -47,7 +47,7 @@ def modifica(dati):
         print(f"{studente['id']}: {studente['nome']} {studente['cognome']}, voti: {studente['voti']}")
         # Chiedi quale studente modificare
     indice = int(input("Inserisci il numero dello studente da modificare: "))
-    if 1 <= indice < len(matrice[0]):
+    if 1 <= indice < len(dati[0]):
         nuovo_nome = input("Nuovo nome: ")
         nuovo_cognome = input("Nuovo cognome: ")
         quanti = int(input("Quanti voti vuoi inserire? "))
@@ -55,15 +55,15 @@ def modifica(dati):
         for _ in range(quanti):
             voto = int(input("Inserisci un voto: "))
             nuovi_voti.append(voto)
-        matrice[0][indice] = nuovo_nome
-        matrice[1][indice] = nuovo_cognome
-        matrice[2][indice] = nuovi_voti
+        dati[0][indice] = nuovo_nome
+        dati[1][indice] = nuovo_cognome
+        dati[2][indice] = nuovi_voti
         print("Studente modificato con successo!")
     else:
         print("Indice non valido.")
 
     # Mostra la matrice aggiornata
-    for riga in matrice:
+    for riga in dati:
         print(riga)
 
 registro = leggi()
