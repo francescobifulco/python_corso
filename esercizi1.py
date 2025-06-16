@@ -606,3 +606,6 @@ with open("testo.txt", "r") as file:
 
 lista_testo = testo.split()
 print(len(lista_testo))
+
+righe = contenuto.split("\n")
+print(f"numero di righe: {len(righe)}")
