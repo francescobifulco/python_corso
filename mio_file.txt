@@ -1,0 +1,3 @@
+Questa � la prima riga
+Questa � la seconda riga.
+Questa riga � stata aggiunta successivamente.

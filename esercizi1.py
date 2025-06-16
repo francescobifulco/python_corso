@@ -455,3 +455,154 @@ numeri_da_invertire = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 Inverti la seguente stringa, carattere per carattere, senza usare 
 lo slicing [::-1].
 stringa_da_invertire = "programmazione" """
+
+#Lettura di un file di testo:
+"""Crea un file di testo chiamato saluto.txt e scrivi al suo 
+interno la riga: "Ciao, mondo!".
+Scrivi un programma Python che apra saluto.txt in modalità lettura 
+('r'), legga l'intero contenuto e lo stampi a schermo.
+Assicurati di chiudere il file dopo averlo letto."""
+
+"""with open("saluto.txt" ,"w") as file:
+    file.write("Ciao, mondo!")
+
+with open("saluto.txt", "r") as file:
+    contenuto = file.read()
+    print(contenuto)"""
+    
+#Scrittura su un file di testo (Sovrascrittura):
+"""Scrivi un programma Python che apra un file chiamato 
+mio_file.txt in modalità scrittura ('w').
+Scrivi la riga "Questa è la prima riga." e poi "Questa è la 
+seconda riga." su righe separate nel file.
+Chiudi il file.
+Verifica il contenuto di mio_file.txt per assicurarti che le 
+righe siano state scritte correttamente."""
+
+"""with open("mio_file.txt" ,"w") as file:
+    file.write("Questa è la prima riga\nQuesta è la seconda riga.")
+
+with open("mio_file.txt", "r") as file:
+    contenuto = file.read()
+    print(contenuto)"""
+    
+#Aggiunta a un file di testo (Append):
+"""Scrivi un programma Python che apra mio_file.txt 
+(creato nell'esercizio precedente) in modalità aggiunta ('a').
+Aggiungi una nuova riga: "Questa riga è stata aggiunta 
+successivamente."
+Chiudi il file.
+Verifica il contenuto di mio_file.txt per assicurarti che la 
+nuova riga sia stata aggiunta senza sovrascrivere quelle 
+esistenti."""
+
+"""with open("mio_file.txt" ,"a") as file:
+    file.write("Questa riga è stata aggiunta successivamente.\n")
+
+with open("mio_file.txt", "r") as file:
+    contenuto = file.read()
+    print(contenuto)"""
+    
+#Lettura riga per riga:
+"""Crea un file di testo chiamato lista_frutta.txt con alcuni 
+nomi di frutta, uno per riga (es. "mela", "banana", 
+"ciliegia").
+Scrivi un programma Python che legga il file lista_frutta.txt 
+riga per riga e stampi ogni riga, rimuovendo il carattere di 
+nuova riga (\n) alla fine."""
+
+"""stringa = "mela \nbanana \nciliegia"
+with open("lista_frutta.txt" ,"w") as file:
+    file.write(stringa)
+    
+    
+
+with open("lista_frutta.txt", "r") as file:
+    contenuto = file.read()
+    print(contenuto)
+
+stringa.replace("\n"," ")"""
+
+#Copia di file:
+"""Scrivi un programma Python che legga il contenuto di un 
+file sorgente (es. saluto.txt) e lo scriva in un nuovo file 
+destinazione (es. copia_saluto.txt).
+Gestisci l'errore FileNotFoundError se il file sorgente non 
+esiste."""
+
+"""try:
+    with open("saluto.txt" ,"w") as file:
+        file.write("Ciao, mondo!")
+    
+    with open("saluto.txt", "r") as file_origi:
+        contenuto = file_origi.read()
+    with open("copia_saluto.txt", "w") as file_destinazione:
+        file_destinazione.write(contenuto)
+    with open("copia_saluto.txt", "r") as file:
+        contenuto1 = file.read()
+    print(contenuto1)
+except FileNotFoundError:
+    print("file non esiste")"""
+
+#Conteggio parole in un file:
+"""Crea un file di testo chiamato testo.txt con un paragrafo 
+di testo a tua scelta (puoi usare un testo lungo qualche riga).
+Scrivi un programma Python che legga il contenuto di testo.txt.
+Conta il numero totale di parole nel file. 
+(Suggerimento: potresti aver bisogno di trasformare il testo 
+in minuscolo e rimuovere la punteggiatura).
+Stampa il conteggio delle parole."""
+
+"""testo = "Buchi Neri: Un Viaggio nel Mistero dello Spazio
+I buchi neri sono tra i fenomeni più affascinanti e misteriosi 
+dell'universo. Immagina di comprimere una quantità enorme di 
+materia in uno spazio estremamente piccolo. Questo è, in 
+sostanza, un buco nero. Si tratta di una regione dello spazio 
+in cui la gravità è così forte che nulla, nemmeno la luce, 
+può sfuggire dalla sua presa. Questo accade quando una stella 
+massiccia esaurisce il suo combustibile e collassa sotto il 
+suo stesso peso. Una volta formato, il buco nero diventa 
+invisibile, ma la sua presenza può essere rilevata grazie agli 
+effetti che ha sull'ambiente circostante, influenzando il 
+movimento delle stelle vicine o emettendo raggi X quando 
+ingloba materia. Studiare i buchi neri ci aiuta a comprendere 
+meglio le leggi della fisica e la natura stessa dell'universo."
+
+with open("testo.txt" ,"w") as file:
+        file.write(testo)
+with open("testo.txt", "r") as file:
+    contenuto = file.read()
+    print(contenuto)
+
+lista_testo = testo.split()
+print(len(lista_testo))"""
+
+#Conteggio righe in un file:
+"""Usando lo stesso file testo.txt dell'esercizio precedente, 
+scrivi un programma che conti il numero di righe presenti nel 
+file.
+Stampa il numero di righe."""
+
+testo = """Buchi Neri: Un Viaggio nel Mistero dello Spazio
+I buchi neri sono tra i fenomeni più affascinanti e misteriosi 
+dell'universo. Immagina di comprimere una quantità enorme di 
+materia in uno spazio estremamente piccolo. Questo è, in 
+sostanza, un buco nero. Si tratta di una regione dello spazio 
+in cui la gravità è così forte che nulla, nemmeno la luce, 
+può sfuggire dalla sua presa. Questo accade quando una stella 
+massiccia esaurisce il suo combustibile e collassa sotto il 
+suo stesso peso. Una volta formato, il buco nero diventa 
+invisibile, ma la sua presenza può essere rilevata grazie agli 
+effetti che ha sull'ambiente circostante, influenzando il 
+movimento delle stelle vicine o emettendo raggi X quando 
+ingloba materia. Studiare i buchi neri ci aiuta a comprendere 
+meglio le leggi della fisica e la natura stessa dell'universo."""
+
+with open("testo.txt" ,"w") as file:
+        file.write(testo)
+with open("testo.txt", "r") as file:
+    contenuto = file.read()
+    print(contenuto)
+
+lista_testo = testo.split()
+print(len(lista_testo))
