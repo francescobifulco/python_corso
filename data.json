@@ -1,24 +1,35 @@
 {
-   "last_id":0,
-   "students":[
-      {
-         "id":1,
-         "nome":"Mario",
-         "cognome":"Rossi",
-         "voti":[
-            7,
-            8,
-            9
-         ]
-      },
-      {
-         "id":2,
-         "nome":"Lucia",
-         "cognome":"Bianchi",
-         "voti":[
-            6,
-            7
-         ]
-      }
-   ]
+    "last_id": 1,
+    "students": [
+        {
+            "id": 1,
+            "nome": "Mario",
+            "cognome": "Rossi",
+            "voti": [
+                6,
+                7,
+                8
+            ],
+            "media": 7.0
+        },
+        {
+            "id": 2,
+            "nome": "Lucia",
+            "cognome": "Bianchi",
+            "voti": [
+                6,
+                6
+            ],
+            "media": 6.0
+        },
+        {
+            "id": 1,
+            "nome": "sss",
+            "cognome": "ssss",
+            "voti": [
+                2
+            ],
+            "media": 2.0
+        }
+    ]
 }
