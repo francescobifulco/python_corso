@@ -635,4 +635,19 @@ Gestisci l'eccezione ValueError se una riga non contiene un
 numero valido.
 Stampa la somma totale."""
 
+"""Dato un array di numeri interi nums e un numero intero target, restituisci gli indici dei due numeri in modo che la loro somma siatarget .
+Si può supporre che ogni input abbia una sola soluzione e non si può utilizzare lo stesso elemento due volte.
+Puoi restituire la risposta in qualsiasi ordine."""
+
+nums = [2,7,11,15]
+targhet = 9
+for i in range(len(nums)):
+    for j in range(i +1):
+        somma = nums[i] + nums[j]
+        if nums[i] + nums[j] == targhet:
+            print("[0,1]")
+        
+    
+
+
 
