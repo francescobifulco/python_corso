@@ -626,11 +626,13 @@ with open("nomi.txt", "r") as file:
     print(contenuto)"""
 
 #Lettura di numeri da un file e calcolo della somma:
-"""Crea un file chiamato numeri.txt che contenga alcuni numeri interi, uno per riga (es. 10, 25, 5, 40).
+"""Crea un file chiamato numeri.txt che contenga alcuni numeri 
+interi, uno per riga (es. 10, 25, 5, 40).
 Scrivi un programma Python che legga ogni numero dal file.
 Converti ogni riga letta in un intero.
 Calcola la somma di tutti i numeri nel file.
-Gestisci l'eccezione ValueError se una riga non contiene un numero valido.
+Gestisci l'eccezione ValueError se una riga non contiene un 
+numero valido.
 Stampa la somma totale."""
 
 
