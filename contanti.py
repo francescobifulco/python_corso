@@ -56,5 +56,10 @@ while True:
     if aggiu_conta == "esci":
         break
     elif aggiu_conta == "invio":
-        
+        scelta = input("per [l]eggere: ").lower()
+        if scelta == "l":
+            rubrica = carica.carica_contatti()
+            print("Contatti presenti: ")
+            for contatto in rubrica["contatti"]:
+                print(contatto)
     
