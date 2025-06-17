@@ -49,6 +49,7 @@ class Fabbrica:
                 "prezzo_vendita": prezzo
             }
             self.inventario.append(prodotto)
+            print(self.inventario)
     
     def vendi_prodotto(self):
         nome = input("trova prodotto: ").lower()
@@ -92,14 +93,14 @@ class Abbigliamento:
       
         
     
-#produzione = Prodotto()
-#produzione.inserimento()
-#produzione.calcola_profitto()
+produzione = Prodotto()
+produzione.inserimento()
+produzione.calcola_profitto()
 
-"""prodo = Fabbrica()
+prodo = Fabbrica()
 prodo.aggiungi_prodotto()
 prodo.vendi_prodotto()
-prodo.resi_prodotto()"""
+prodo.resi_prodotto()
 
 e = Eletronica("Smartphone", 299.99)
 a = Abbigliamento("Maglietta", 19.99)

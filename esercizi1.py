@@ -634,6 +634,9 @@ Gestisci l'eccezione ValueError se una riga non contiene un
 numero valido.
 Stampa la somma totale."""
 
+
+
+
 """Dato un array di numeri interi nums e un numero intero target, restituisci gli indici dei due numeri in modo che la loro somma siatarget .
 Si può supporre che ogni input abbia una sola soluzione e non si può utilizzare lo stesso elemento due volte.
 Puoi restituire la risposta in qualsiasi ordine."""
@@ -709,6 +712,10 @@ Progetti di Livello Intermedio
         else:
             median = (numeri_ordinati[n // 2 - 1] + numeri_ordinati[n // 2]) / 2
             print(f"La mediana di {self.numero} è {median}")
+    def salvare(self):
+    with open("calcolatrice.txt", "a", encoding="utf-8") as file:
+        for calcoli in self.numero:
+            file.write(f"{calcoli}\n")
         
 calcola = Calcolatrice()
 calcola.inserimento()
@@ -773,10 +780,10 @@ calcola.mediana()
                     articolo["acquistato"] = False
         if not trovato:
             print(f"Articolo '{nome}' non trovato.")
-    def salvataggio(self):
-        with open("lista_spesa.txt", "w") as file:
-            for articolo in self.carello:
-                file.write(self.carello)
+    def salvare(self):
+        with open("lista_spesa.txt", "a", encoding="utf-8") as file:
+            for spessa in self.carello:
+            file.write(f"{spessa}\n")
        
 lista = Spesa()
 while True:

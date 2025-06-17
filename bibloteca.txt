@@ -1,0 +1,2 @@
+{'titolo': 'ciao', 'autore': 'franco', 'anno pubblicazione': '23-03-2009', 'disponibilita': True}
+{'titolo': 'ciao 2 la vendeta', 'autore': 'franco', 'anno pubblicazione': '20-06-2029', 'disponibilita': False}
