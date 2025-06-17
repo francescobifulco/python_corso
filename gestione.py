@@ -63,8 +63,27 @@ class GestioneInventario:
                 print(f"la quantita del prodotto {nome} e {quantita}")
                 print(f"la quantita del prodotto {nome} e rimasto: {prodot.quantita}")
         if not trova: print(f"Il prodotto '{nome}' non trovato.")
+    def rimuovi_prod(self):
+        nome = input("inserisci il nome del prodotto: ")
+        trova = False
+        for prodot in self.prodotti:
+            if prodot.nome == nome:
+                trova = True
+                rimuovi = input("vuoi rimuovere il prodotto s/n: ")
+                if rimuovi == "s":
+                    self.prodotti.remove(prodot)
+                    print("prodotto rimoso!")
+                elif rimuovi == "n": break
+        if not trova: print(f"Il prodotto '{nome}' non trovato.")  
+    def Calcola_Valore_Totale(self):
+         #somma di (quantità * prezzo)
+         for prodot in self.prodotti:
+             somma = somma + (int(prodot.quantita) * int(prodot.prezzo))
+             print(f"la somma di tutti i prodotti: {somma}")         
 
 gestione = GestioneInventario()
 gestione.aggiungi()
 gestione.mostra_prodotti()
 gestione.quantita_aggio()
+gestione.rimuovi_prod()
+gestione.Calcola_Valore_Totale()
