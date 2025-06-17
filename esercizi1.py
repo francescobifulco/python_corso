@@ -639,15 +639,170 @@ Stampa la somma totale."""
 Si può supporre che ogni input abbia una sola soluzione e non si può utilizzare lo stesso elemento due volte.
 Puoi restituire la risposta in qualsiasi ordine."""
 
-nums = [2,7,11,15]
+"""nums = [2,7,11,15]
 targhet = 9
 for i in range(len(nums)):
-    for j in range(i +1):
+    for j in range(i + 1):
         somma = nums[i] + nums[j]
         if nums[i] + nums[j] == targhet:
-            print("[0,1]")
+            print("[0,1]")"""
+
+"""Dato un array circolare nums, trovare la differenza assoluta massima tra gli elementi adiacenti.
+Nota : In un array circolare, i primi e gli ultimi elementi sono adiacenti."""
+
+"""nums = [1,2,4]
+
+differenza = []
+for i in range(len(nums)):
+    for j in range(i + 1):
+        sotra = nums[i] - nums[j]
+        differenza.append(sotra)
+print(max(differenza))"""
         
-    
+"""Calcolatore di Statistiche per Numeri
+ * Descrizione: Un programma che chiede 
+ all'utente di inserire una serie di 
+ numeri e poi calcola e visualizza 
+ statistiche di base come la somma, la 
+ media, il numero massimo e il numero 
+ minimo.
+ * Concetti chiave:
+   * Collezioni: Lista (list) per 
+   memorizzare i numeri.
+   * Funzioni: Funzioni per 
+   calcola_somma(), calcola_media(), 
+   trova_max(), trova_min(). Puoi usare 
+   anche funzioni built-in come sum(), 
+   max(), min().
+   * Cicli: for o while loop per 
+   raccogliere i numeri dall'utente.
+   * Conversione di tipo: Da str a 
+   int/float.
+ * Possibili estensioni:
+   * Calcolare la mediana, la deviazione 
+   standard.
+   * Permettere all'utente di inserire i 
+   numeri da un file.
+Progetti di Livello Intermedio 
+(Introduzione alle Classi)"""
+
+"""class Calcolatrice:
+    numero = []
+    def inserimento(self):
+        nume = int(input("inserisci quamti numeri vuoi mettere: "))
+        for i in range(nume):
+            numeri = int(input(f"inserisci un numero {i}: "))
+            Calcolatrice.numero.append(numeri)
+    def calcola_somma(self):
+        print("la somma e: ",sum(Calcolatrice.numero))
+    def calcola_media(self):
+        media = sum(Calcolatrice.numero) / len(Calcolatrice.numero)
+        print(f"la media e: {media}")
+    def trova_max(self):
+        print("il massimo e: ",max(Calcolatrice.numero))
+    def trova_min(self):
+        print("il minimo e: ",min(Calcolatrice.numero))
+    def mediana(self):
+        numeri_ordinati = sorted(self.numero)
+        n = len(numeri_ordinati)
+        if n % 2 == 1:
+            median = numeri_ordinati[n // 2]
+        else:
+            median = (numeri_ordinati[n // 2 - 1] + numeri_ordinati[n // 2]) / 2
+            print(f"La mediana di {self.numero} è {median}")
+        
+calcola = Calcolatrice()
+calcola.inserimento()
+calcola.calcola_somma()
+calcola.calcola_media()
+calcola.trova_max()
+calcola.trova_min()
+calcola.mediana()
+#calcola.deviazione_standard()"""
+
+"""Gestore di Liste della Spesa Semplice
+ * Descrizione: Un programma che permette 
+ all'utente di aggiungere, rimuovere, 
+ visualizzare e segnare come "acquistato" 
+ elementi in una lista della spesa.
+ * Concetti chiave:
+   * Collezioni: Liste (list) per 
+   memorizzare gli articoli.
+   * Funzioni: Funzioni per aggiungere 
+   aggiungi_articolo(), rimuovere 
+   rimuovi_articolo(), visualizzare 
+   visualizza_lista(), marcare come 
+   acquistato marca_acquistato().
+   * Input/Output: Interazione 
+   con l'utente tramite input() e 
+   print().
+   * Cicli: while loop per il menu 
+   principale del programma.
+ * Possibili estensioni:
+   * Salvataggio della lista su un file 
+   di testo e caricamento all'avvio.
+   * Gestione della quantità per ogni 
+   articolo."""
+
+class Spesa:
+    def __init__(self):
+        self.carello = []
+    def aggiungi_articolo(self):
+        aggiungi = str(input("aggiungi un articolo: ")).lower()
+        articolo = {"nome": aggiungi, "acquistato": False}
+        self.carello.append(articolo)
+        print(f"ha aggiunto articolo {aggiungi} alla spesa")
+    def rimuovi_articolo(self):
+        rimuovi = input("rimuovi un articolo al carello: ").lower()
+        if rimuovi in Spesa.carello:
+            self.carello.pop(rimuovi)
+            print(f"articolo {rimuovi} e stato rimoso")
+        else: print(f"articolo non e presente")
+    def visualizza_lista(self):
+        for i in range(len(self.carello)):
+            print(self.carello)
+    def marca_acquistato(self):
+        nome = input("Quale articolo hai comprato? ").lower()
+        trovato = False
+        for articolo in self.carello:
+            if articolo["nome"] == nome:
+                trovato = True
+                decidi = input(f"Hai comprato l'articolo '{nome}'? (s/n): ").lower()
+                if decidi == "s":
+                    articolo["acquistato"] = True
+                elif decidi == "n":
+                    articolo["acquistato"] = False
+        if not trovato:
+            print(f"Articolo '{nome}' non trovato.")
+    def salvataggio(self):
+        with open("lista_spesa.txt", "w") as file:
+            for articolo in self.carello:
+                file.write(self.carello)
+       
+lista = Spesa()
+while True:
+    scelta = input("per fare le operazzione di CRUD premere 'invio' per uscire premere 'esci': ").lower()
+    if scelta == "esci": break
+    elif scelta == "invio":
+        scelta1 = input("[a]ggiungere, [r]imuovere, [v]isualizzare, [m]arcato, [s]alvare: ").lower()
+        if scelta1 == "a":
+            lista.aggiungi_articolo()
+        elif scelta1 == "r":
+            opper = input("vuoi rimuovere s/n: ").lower()
+            if opper == "s": lista.rimuovi_articolo()
+            elif opper == "n": continue
+        elif scelta1 == "v":
+            lista.visualizza_lista()
+        elif scelta1 == "m":
+            lista.marca_acquistato()
+        elif scelta1 == "s":
+            lista.salvataggio()
+
+
+
+
+
+
 
 
 
