@@ -30,11 +30,39 @@ ingloba materia. Studiare i buchi neri ci aiuta a comprendere
 meglio le leggi della fisica e la natura stessa dell'universo."""
     def conta_parola(self):
         lista_testo = Analizzatore.testo.split()
-        print(len(lista_testo))
+        print("il numero di parole sono:", len(lista_testo))
     def conta_carattere(self):
-        lista_caratere = list(Analizzatore.testo)
-        print(lista_caratere.count(len(lista_caratere)))
+        print(len(self.testo))
+    def conta_vocali_consonanti(self):
+        consonanti = "bcdfghlmnpqrstvz".lower()
+        conteggio = 0
+        vocali ="aeiou".lower()
+        conteggio1 = 0
+        for i in self.testo:
+            if i in consonanti:
+                conteggio += 1
+            elif i in vocali:
+                conteggio1 += 1
+        print(f"numero di consonanti sono: {conteggio}")
+        print(f"numero di vocali sono: {conteggio1}")
+    def frequenza(self):
+        lista_frase = self.testo.split()
+        conteggio = 0
+        for parola in set(lista_frase):
+            if parola in lista_frase:
+                conteggio = lista_frase.count(parola)
+            print(f"La parola '{parola}' compare volte: {conteggio}")
+    def parola_lunga_corta(self):
+        lista_lun = self.testo.split()
+        lunghezze = [len(parola) for parola in lista_lun]
+        massimo = max(lunghezze)
+        minimo = min(lunghezze)
+        print(f"La parola più lunga ha {massimo} caratteri")
+        print(f"La parola più corta ha {minimo} caratteri")
 
 analizzi = Analizzatore()
 analizzi.conta_parola()
 analizzi.conta_carattere()
+analizzi.conta_vocali_consonanti()
+analizzi.frequenza()
+analizzi.parola_lunga_corta()

@@ -52,7 +52,6 @@ lista = frase.split()
 print(lista)
 print(len(lista))
 
-
 Chiedi all’utente una 
 parola e stampa il numero di 
 vocali presenti.
@@ -744,7 +743,7 @@ calcola.mediana()
    * Gestione della quantità per ogni 
    articolo."""
 
-class Spesa:
+"""class Spesa:
     def __init__(self):
         self.carello = []
     def aggiungi_articolo(self):
@@ -796,7 +795,7 @@ while True:
         elif scelta1 == "m":
             lista.marca_acquistato()
         elif scelta1 == "s":
-            lista.salvataggio()
+            lista.salvataggio()"""
 
 
 

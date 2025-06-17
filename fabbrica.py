@@ -36,15 +36,73 @@ class Fabbrica:
     inventario = []
     def aggiungi_prodotto(self):
         while True:
-            aggi = input("aggiungi un prodotto per uscire premi 'esci': ").lower()
-            if aggi == "esci": break
-            prodo = {"nome": aggi}
-            self.inventario.append(prodo)
-            print(self.inventario)
+            nome = input("Aggiungi un prodotto (per uscire premi 'esci'): ").lower()
+            if nome == "esci":
+                break
+            quantita = int(input("Inserisci la quantità: "))
+            costo = float(input("Inserisci il costo di produzione: "))
+            prezzo = float(input("Inserisci il prezzo di vendita: "))
+            prodotto = {
+                "nome": nome,
+                "quantita": quantita,
+                "costo_produzione": costo,
+                "prezzo_vendita": prezzo
+            }
+            self.inventario.append(prodotto)
     
-produzione = Prodotto()
-produzione.inserimento()
-produzione.calcola_profitto()
+    def vendi_prodotto(self):
+        nome = input("trova prodotto: ").lower()
+        trova = False
+        for prodot in self.inventario:
+            if prodot["nome"] == nome:
+                trova = True
+                vendi = int(input(f"inserisci il numero di vendite del prodotto {nome}: "))
+                if vendi > prodot["quantita"]:
+                    print("Non hai abbastanza prodotti in magazzino!")
+                    return
+                prodot["quantita"] -= vendi 
+                profitto = prodot["prezzo_vendita"] - prodot["costo_produzione"]
+                profitto_tot = profitto * vendi
+                print(f"il profitto del prodotto e stato: {profitto_tot} €")
+        if not trova: print(f"Articolo '{nome}' non trovato.")
+    def resi_prodotto(self):
+        nome = input("trova prodotto: ").lower()
+        trova = False
+        for prodot in self.inventario:
+            if prodot["nome"] == nome:
+                trova = True
+                reso = int(input(f"inserisci il numero di vendite del prodotto {nome}: "))
+                prodot["quantita"] += reso
+                print(f"la quantita del prodotto {nome} e ritoranto di {prodot}")
+        if not trova: print(f"Articolo '{nome}' non trovato.")
+        
+class Eletronica:
+    def __init__(self, nome, prezzo):
+       self.nome = nome
+       self.prezzo = prezzo
+    def __str__(self):
+        return f"{self.nome},{self.prezzo}"
+    
+class Abbigliamento: 
+    def __init__(self, nome, prezzo):
+       self.nome = nome
+       self.prezzo = prezzo
+    def __str__(self):
+        return f"{self.nome},{self.prezzo}"
+      
+        
+    
+#produzione = Prodotto()
+#produzione.inserimento()
+#produzione.calcola_profitto()
 
-prodo = Fabbrica()
+"""prodo = Fabbrica()
 prodo.aggiungi_prodotto()
+prodo.vendi_prodotto()
+prodo.resi_prodotto()"""
+
+e = Eletronica("Smartphone", 299.99)
+a = Abbigliamento("Maglietta", 19.99)
+
+print(e)
+print(a)
