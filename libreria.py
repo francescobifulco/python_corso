@@ -4,7 +4,8 @@ Questo progetto ti permette di tenere traccia di un catalogo di libri.
 Concetti Utilizzati:
 Classi: Crea una classe Libro con attributi come titolo, autore, anno_pubblicazione, disponibile (booleano).
 Collezioni: Una lista di oggetti Libro per rappresentare la libreria.
-Funzioni: Metodi all'interno della classe Libro (es. mostra_dettagli()) e funzioni esterne per gestire la lista di libri 
+Funzioni: Metodi all'interno della classe Libro (es. mostra_dettagli()) e funzioni esterne per gestire la lista di 
+libri 
 (aggiungi, cerca, presta, restituisci).
 Gestione File: Salvare e caricare i dati dei libri (potresti usare json o un semplice formato testuale).
 Moduli: Potresti usare json per una serializzazione/deserializzazione più semplice degli oggetti.
@@ -15,12 +16,12 @@ Cerca Libro: Cerca un libro per titolo o autore.
 Presta/Restituisci Libro: Modifica lo stato disponibile di un libro.
 Salva/Carica Libreria: Persisti lo stato della libreria su un file.
 Consigli per lo Sviluppo:
-Inizia Semplice: Non cercare di implementare tutte le funzionalità contemporaneamente. Inizia con la logica base e poi aggiungi 
-complessità.
+Inizia Semplice: Non cercare di implementare tutte le funzionalità contemporaneamente. Inizia con la logica base e 
+poi aggiungi complessità.
 Struttura il Codice: Utilizza funzioni per organizzare il tuo codice e renderlo più leggibile e modulare.
 Commenta: Aggiungi commenti per spiegare parti complesse o scelte di design.
-Gestione degli Errori: Pensa a cosa succede se l'utente inserisce un input non valido (es. testo invece di un numero) e usa blocchi 
-try-except.
+Gestione degli Errori: Pensa a cosa succede se l'utente inserisce un input non valido (es. testo invece di un numero) 
+e usa blocchi try-except.
 Interfaccia Utente Semplice: Inizia con un'interfaccia a riga di comando (CLI).
 Testa il Tuo Codice: Esegui il tuo programma frequentemente per assicurarti che funzioni come previsto."""
 
