@@ -36,12 +36,17 @@ class Allenatore(MembroSquadra):
         super().__init__(nome, eta)
         self.anni_di_esperienza = anni_di_esperienza
 
-    def dirige_allenamento(): #che dettagliano come l'allenatore conduce gli allenamenti
+    def dirige_allenamento(self): #che dettagliano come l'allenatore conduce gli allenamenti
         print("L'allenatore inizia l'allenamento con il riscaldamento.")
 class Assistente(MembroSquadra):
     def __init__(self, nome, eta,fisioterapista, analista_gioco):
         super().__init__(nome, eta)
         self.fisioterapista = fisioterapista
         self.analista_gioco = analista_gioco
-    def supporta_team():
+    def supporta_team(self):
         print("aiuta i giocattori a essere piu forti")
+allenatore = Allenatore("Mister Rossi", 50, 20)
+allenatore.dirige_allenamento()
+
+assistente = Assistente("Bianchi", 35, True, False)
+assistente.supporta_team()
