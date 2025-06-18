@@ -26,11 +26,11 @@ import random
 
 class Lancio:
     def numero_faccie(self):
-        facce = int(input("inserisci il numero di facce: "))
+        facce = input("inserisci il numero di facce: ")
         print(f"il numero di facce e: {facce}")
         return facce
     def singolo(self,facce):
-        causuale = random.randint(1, facce)
+        causuale = random.randint(1, int(facce))
         print(causuale)
 
 dado1 = Lancio()
