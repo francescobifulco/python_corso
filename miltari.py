@@ -67,7 +67,7 @@ class Ricognizione(UnitaMilitare):
         print("conduce missioni di sorveglianza.")
 class ControlloMilitare(Fanteria,Artiglieria,Cavalleria,SupportoLogistico,Ricognizione):
     def __init__(self, nome, numero_soldati,unita_registrate):
-        super().__init__(nome, numero_soldati)
+        UnitaMilitare.super().__init__(nome, numero_soldati)
         self.unita_registrate = unita_registrate
     def registra_unita(self,unita): 
         self.unita_registrate.append(unita)
