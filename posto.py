@@ -111,7 +111,7 @@ class Teatro(Posto):
 
 numero=input("numero di posti: ")
 fila=input("numero fila: ")
-occupato=True
+occupato=False
 teatro = Posto(numero,fila ,occupato)
 teatro.prenota()
 teatro.libera()
@@ -122,7 +122,7 @@ vip.prenota()
 
 base = 30
 online = 39
-prenota=False
+prenota=True
 standart = PostoStandard(numero, fila,occupato,base,online)
 standart.libera()
 standart.prenota(prenota)
