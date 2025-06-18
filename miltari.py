@@ -71,12 +71,44 @@ class ControlloMilitare(Fanteria,Artiglieria,Cavalleria,SupportoLogistico,Ricogn
         self.unita_registrate = unita_registrate
     def registra_unita(self,unita): 
         self.unita_registrate.append(unita)
-    def mostra_unita(self): 
-        for indice in self.unita_registrate:
-            print(self.unita_registrate)
-    def dettagli_unita(self,nome): 
-        nome = input("inserisci il nome del unita: ")
-        for el in self.unita_registrate:
-            if el == self.nome:
-                print()
-        if not nome: print("nome non trovato")
+    def mostra_unita(self):
+        if not self.unita_registrate:
+            print("Nessuna unità registrata.")
+        else:
+            print("Unità registrate:")
+            for unita in self.unita_registrate:
+                print(f"- {unita.nome} ({unita.__class__.__name__}), Soldati: {unita.numero_soldati}")
+
+    def dettagli_unita(self, nome):
+        trova = False
+        for unita in self.unita_registrate:
+            if unita.nome == nome:
+                trova = True
+                print(f"Dettagli unità '{nome}':")
+                print(f"Tipo: {unita.__class__.__name__}")
+                print(f"Numero soldati: {unita.numero_soldati}")
+        if not trova:
+            print(f"Unità '{nome}' non trovata.")
+            
+militari = UnitaMilitare("bravo", 150000)
+militari.attacca()
+militari.muovi()
+militari.ritira()
+
+print("fanteria")
+fanta = Fanteria("alfa", 3000)
+fanta.ritira()
+fanta.attacca()
+fanta.muovi()
+fanta.costruisci_trincea
+
+print("Artiglieria")
+arti = Artiglieria("omega", 10000)
+arti.attacca()
+arti.calibra_artiglieria()
+arti.muovi()
+arti.ritira()
+
+print("Cavalleria")
+cava = Cavalleria("i piu forti", 20000)
+cava.esplora_terreno()
