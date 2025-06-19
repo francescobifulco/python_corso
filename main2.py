@@ -48,4 +48,5 @@ print(frutta)"""
 """* Crei una tupla con le coordinate geografiche della tua 
 città preferita (es. latitudine, longitudine).
 * Stampi le coordinate."""
-coordinate = (34.738791,36.025246)
+"""coordinate = (34.738791,36.025246)
+print(coordinate)"""

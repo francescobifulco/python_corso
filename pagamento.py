@@ -17,8 +17,10 @@ GestorePagamenti:
 Una classe che usa un'istanza di MetodoPagamento per effettuare pagamenti, senza preoccuparsi del dettaglio del 
 metodo di pagamento.
 """
+from abc import ABC,abstractmethod
 
-class MetodoPagamento:
+class MetodoPagamento(ABC):
+    @abstractmethod
     def effettua_pagamento(self,importo):
         pass
     
