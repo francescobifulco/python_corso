@@ -1,0 +1,3 @@
+module moduloEccezioniEsercizio{
+	exports packageeccezioni;
+}

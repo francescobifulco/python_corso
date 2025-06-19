@@ -1,0 +1,178 @@
+Buffer b1 = ByteBuffer.allocate(8);
+
+		int capacita = b1.capacity();
+		System.out.println(capacita);
+
+		int posizioneCorrente = b1.position();
+		System.out.println(posizioneCorrente);
+
+		// modalità di scrittura
+		int limite = b1.limit();
+		System.out.println(limite);
+
+		for (byte i = 0; i < 3; i++) {
+			ByteBuffer bb1 = (ByteBuffer) b1;
+			bb1.put(i);
+		}
+		posizioneCorrente = b1.position();
+		System.out.println(posizioneCorrente);
+
+		// -------------------------------------------------------------------------------------
+
+		b1.flip();
+
+		posizioneCorrente = b1.position();
+		System.out.println(posizioneCorrente);
+
+		// modalità di lettura
+		limite = b1.limit();
+		System.out.println(limite);
+
+		for (byte i = 0; i < 3; i++) {
+			ByteBuffer bb1 = (ByteBuffer) b1;
+			byte valore = bb1.get();
+			System.out.print(valore + " ");
+		}
+		System.out.println();
+
+		posizioneCorrente = b1.position();
+		System.out.println(posizioneCorrente);
+
+	}
+	
+	try {
+
+			InputStream is = new FileInputStream("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\messaggi.txt");
+			Channel c1 = Channels.newChannel(is);
+			System.out.println(c1.isOpen());
+			c1.close();
+
+			// -----------------------------------------------------------------------
+
+			Path percorso = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\messaggi.txt");
+			Channel c3 = Files.newByteChannel(percorso);
+
+			c3.close();
+			
+			Path p1 = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\messaggi.txt");
+			Path p1b = Path.of("C:\\Users", "Roman\\OneDrive\\Desktop", "prove", "messaggi.txt");
+			System.out.println(p1);
+			System.out.println(p1b);
+
+			URI u1 = URI.create("file:///C:/Users/Roman/OneDrive/Desktop/prove/messaggi.txt");
+			Path p1c = Path.of(u1);
+			System.out.println(p1c);
+			System.out.println();
+
+			Path p2 = Path.of("paperino\\dati.txt");
+			System.out.println(p1.isAbsolute());
+			System.out.println(p2.isAbsolute());
+			System.out.println();
+
+			System.out.println(p1.endsWith("aggi.txt"));
+			System.out.println(p1.endsWith("messaggi.txt"));
+			System.out.println(p1.endsWith("ove\\messaggi.txt"));
+			System.out.println(p1.endsWith("prove\\messaggi.txt"));
+			System.out.println();
+
+			System.out.println(p1.getFileName());
+			System.out.println(p1.getRoot());
+			System.out.println();
+
+			System.out.println(p1.getName(0));
+			System.out.println(p1.getName(3));
+			System.out.println();
+
+			System.out.println(p1.getNameCount());
+			System.out.println();
+
+			Path p3 = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove");
+			p3 = p3.resolve("messaggi.txt");
+			System.out.println(p3);
+			System.out.println();
+
+			System.out.println(p3.startsWith("C:\\use"));
+			System.out.println(p3.startsWith("C:\\users\\roman"));
+			System.out.println();
+
+			Path p4 = p2.toAbsolutePath();
+			System.out.println(p4);
+			System.out.println();
+			
+			Path p1 = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\messaggi.txt");
+			Path p2 = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\messaggi-copia.txt");
+			Files.copy(p1, p2, StandardCopyOption.REPLACE_EXISTING);
+
+			Path p3 = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\paperino.txt");
+			Files.move(p2, p3, StandardCopyOption.ATOMIC_MOVE);
+
+			// -----------------------------------------------------------------------
+
+			Path p4 = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\nuovaCartella");
+			if (!Files.exists(p4))
+				Files.createDirectory(p4);
+
+			Path p5 = p4.resolve("paperino.txt");
+			if (!Files.exists(p5))
+				Files.createFile(p5);
+
+			p5 = p4.resolve("pippo.txt");
+			if (Files.exists(p5))
+				Files.delete(p5);
+
+			// -----------------------------------------------------------------------
+
+			System.out.println(Files.isDirectory(p4));
+			System.out.println();
+
+			System.out.println(Files.isExecutable(p3));
+			System.out.println();
+
+			System.out.println(Files.isHidden(p3));
+			System.out.println(Files.isReadable(p3));
+			System.out.println(Files.isWritable(p3));
+			System.out.println();
+
+			System.out.println(Files.isRegularFile(p3));
+			System.out.println(Files.isRegularFile(p4));
+			
+			Path p1 = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\messaggi.txt");
+			SeekableByteChannel sbc1 = Files.newByteChannel(p1, StandardOpenOption.READ);
+			System.out.println(sbc1.size());
+			sbc1.close();
+
+			// ------------------------------------------------------------------------
+
+			Path p2 = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove");
+			DirectoryStream<Path> ds1 = Files.newDirectoryStream(p2);
+			for (Path p : ds1)
+				System.out.println(p);
+			ds1.close();
+			System.out.println();
+
+			// ------------------------------------------------------------------------
+
+			InputStream is = Files.newInputStream(p1, StandardOpenOption.READ);
+			int carattere;
+			while ((carattere = is.read()) != -1)
+				System.out.print((char) carattere);
+			is.close();
+			System.out.println();
+
+			// ------------------------------------------------------------------------
+
+			Path p3 = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\messaggi-uscita.txt");
+			byte[] dati = "messaggio di prova\r\n".getBytes();
+			OutputStream os = Files.newOutputStream(p3, StandardOpenOption.APPEND);
+			for (int i = 0; i < dati.length; i++)
+				os.write(dati[i]);
+			os.close();
+
+			// ------------------------------------------------------------------------
+
+			System.out.println(Files.notExists(p3));
+			System.out.println();
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}

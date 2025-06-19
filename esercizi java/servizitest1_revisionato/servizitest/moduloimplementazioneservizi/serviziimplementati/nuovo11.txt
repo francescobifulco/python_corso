@@ -1,0 +1,139 @@
+try {
+
+			String frase = "uno due $ tre $$ quattro"; // $->@ $$->#
+			byte[] datiFrase = frase.getBytes();
+			InputStream bais = new ByteArrayInputStream(datiFrase);
+			PushbackInputStream pis = new PushbackInputStream(bais);
+
+			int valoreLetto;
+			while ((valoreLetto = pis.read()) != -1) {
+				char carattere = (char) valoreLetto;
+
+				switch (carattere) {
+
+				case '$':
+
+					int valoreSuccessivo = pis.read();
+					char carattereSuccessivo = (char) valoreSuccessivo;
+
+					if (carattereSuccessivo == '$')
+						System.out.print('#');
+					else {
+						System.out.print('@');
+						pis.unread(valoreSuccessivo);
+					}
+
+					break;
+
+				default:
+					System.out.print(carattere);
+					break;
+				}
+				
+				
+			}
+
+
+            int i1 = 10;			
+			System.out.printf("valore: %+d", i1);
+			System.out.println();
+			
+			System.out.printf("valore: %,.2f", 1234567.12345);
+			System.out.println();
+			pis.close();
+			
+			List<String> elencoFile = new ArrayList<>();
+			elencoFile.add("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\primo.txt");
+			elencoFile.add("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\secondo.txt");
+			elencoFile.add("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\terzo.txt");
+			
+			Paperino p1 = new Paperino(elencoFile);
+			SequenceInputStream sis = new SequenceInputStream(p1);
+			
+			int valoreLetto;
+			while ((valoreLetto = sis.read()) != -1)
+				System.out.print((char) valoreLetto);
+
+			sis.close();
+			
+			
+			FileOutputStream fos2 = new FileOutputStream("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\messaggi uscita.txt");
+			BufferedOutputStream bos1 = new BufferedOutputStream(fos2);
+			
+			boolean autoFlush = false;
+			PrintStream ps7 = new PrintStream(bos1, autoFlush);
+			
+			ps7.write('X');
+			ps7.write('Y');
+			ps7.write('Z');
+			ps7.write('\n');
+			ps7.write('A');
+			ps7.write('B');
+			ps7.write('C');
+						
+			//ps7.flush();
+			
+			ps7.close();
+			
+			File f1 = new File("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\messaggi uscita.txt");
+			RandomAccessFile raf1 = new RandomAccessFile(f1, "rw");
+			raf1.seek(10);
+			String s1 = "salve a tutti";
+			byte[] dati = s1.getBytes();
+			raf1.write(dati);
+			raf1.close();
+
+			// ------------------------------------------------------------
+
+			RandomAccessFile raf2 = new RandomAccessFile(f1, "r");
+			raf2.seek(10);
+			byte[] lettura = new byte[13];
+			raf2.readFully(lettura);
+			s1 = new String(lettura);
+			System.out.println(s1);
+			raf2.close();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+	
+	package test028;
+
+import java.io.FileInputStream;
+import java.util.Collection;
+import java.util.Enumeration;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Paperino implements Enumeration<FileInputStream> {
+	
+	private Queue<String> elenco;
+	
+	public Paperino(Collection<String> elenco) {
+		this.elenco = new LinkedList<>();
+		this.elenco.addAll(elenco);
+	}
+
+	@Override
+	public boolean hasMoreElements() {		
+		return !elenco.isEmpty();
+	}
+
+	@Override
+	public FileInputStream nextElement() {
+		System.out.println();
+		FileInputStream fis = null;
+		try {
+			String nomeProssimoFile = elenco.poll();
+			fis = new FileInputStream(nomeProssimoFile);
+		} catch (Exception e) {
+			e.printStackTrace();			
+		}		
+		return fis;
+	}
+
+}
+
+

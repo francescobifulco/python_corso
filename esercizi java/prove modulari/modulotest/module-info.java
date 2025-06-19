@@ -1,0 +1,5 @@
+module modulotest {
+	
+	requires altromodulotest;
+	
+}

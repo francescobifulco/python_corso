@@ -1,0 +1,80 @@
+Pippo p1 = (s) -> {			
+			if (s.isEmpty())
+				throw new StringaVuotaException();			
+			return s.toUpperCase();			
+		};
+		
+		try {
+			
+			String s = "";
+			String risultato = p1.metodo(s);
+			System.out.println(risultato);
+			
+		} catch(StringaVuotaException e) {
+			System.out.println(e.getMessage());
+		
+		public class StringaVuotaException extends Exception {
+	
+	public StringaVuotaException() {
+		super("errore, la stringa è vuota");
+	}
+
+}
+
+public interface Pippo {
+	
+	String metodo(String valore) throws StringaVuotaException;
+
+}
+
+	int valore = 100;
+		
+		Pippo p1 = (s) -> {
+			
+			// valore = 200; // errore
+			System.out.println(valore); // valore si comporta come fosse "final" (effective final)
+			String risultato = s.toUpperCase();
+			return risultato;
+			
+		};
+		
+		String s = p1.metodo("ciao");
+		System.out.println(s);
+		
+		// valore++;
+		System.out.println(valore);
+		
+		svolgimento(Paperino::metodoPaperino, "ciao");
+		
+		Pluto pl1 = new Pluto();		
+		svolgimento(pl1::metodoPluto, "ciao");
+		
+		public static void svolgimento(Pippo p , String valore) {
+		String risultato = p.metodoPippo(valore);
+		System.out.println(risultato);
+	}
+	
+	public static void svolgimento(Pippo p1, String s1, String s2) {		
+		Persona pe1 = p1.metodoPippo(s1, s2);
+		System.out.println(pe1);		
+	}
+	
+	Pippo p1 = Persona::new; // constructor reference		
+		svolgimento(p1, "francesco", "bifulco");
+		
+		public class Persona {
+	
+	private String nome, cognome;
+
+	public Persona(String nome, String cognome) {
+		System.out.println("creo una nuova persona");
+		this.nome = nome;
+		this.cognome = cognome;
+	}
+	
+	@Override
+	public String toString() {
+		return "mi chiamo " + nome + " " + cognome;
+	}
+
+}

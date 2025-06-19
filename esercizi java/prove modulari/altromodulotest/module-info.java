@@ -1,0 +1,5 @@
+module altromodulotest {
+	
+	exports altromodulare;
+	
+}

@@ -1,0 +1,5 @@
+module moduloInterfacciaServizi {
+	
+	exports serviziOfferti;
+	
+}

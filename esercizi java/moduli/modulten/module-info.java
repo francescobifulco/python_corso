@@ -1,0 +1,5 @@
+module modulten{	
+	
+	exports moduldix;
+	
+}

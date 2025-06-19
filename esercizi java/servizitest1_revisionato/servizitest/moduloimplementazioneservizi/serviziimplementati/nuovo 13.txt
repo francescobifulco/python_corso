@@ -1,0 +1,43 @@
+Path p1 = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\messaggi.txt");			
+			BasicFileAttributes bfa1 = Files.readAttributes(p1, BasicFileAttributes.class);			
+			FileTime ft1 = bfa1.creationTime();
+			System.out.println(ft1);			
+			System.out.println(bfa1.fileKey());			
+			System.out.println(bfa1.isDirectory());			
+			System.out.println(bfa1.lastAccessTime());
+			System.out.println(bfa1.lastModifiedTime());
+			System.out.println(bfa1.size());
+			
+			p1 = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\giunzione");
+			bfa1 = Files.readAttributes(p1, BasicFileAttributes.class, LinkOption.NOFOLLOW_LINKS);
+			
+			System.out.println(bfa1.isDirectory());	
+			System.out.println(bfa1.isOther());
+			
+			Path percorso = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\messaggi.txt");
+			ByteBuffer bb = ByteBuffer.allocate(5);
+			SeekableByteChannel sbc = Files.newByteChannel(percorso);
+
+			int conteggio;
+			while ((conteggio = sbc.read(bb)) != -1) {
+
+				bb.rewind();
+
+				for (int i = 0; i < conteggio; i++) {
+					int valore = bb.get();
+					System.out.print((char) valore);
+				}
+
+				bb.rewind();
+			}
+			Path percorso = Path.of("C:\\Users\\Roman\\OneDrive\\Desktop\\prove\\messaggi uscita.txt");
+			SeekableByteChannel sbc = Files.newByteChannel(percorso, StandardOpenOption.WRITE, StandardOpenOption.CREATE);
+
+			String messaggio = "messaggio di prova 123";
+			byte[] dati = messaggio.getBytes();
+			ByteBuffer bb = ByteBuffer.allocate(22);
+			bb.put(dati);
+
+			bb.rewind();
+			sbc.write(bb);
+			sbc.close();
