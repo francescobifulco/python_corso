@@ -1,5 +1,0 @@
-module modulnine{
-
-		exports modulneuf;
-	
-}

@@ -1,5 +1,0 @@
-module modulotest {
-	
-	requires altromodulotest;
-	
-}

@@ -1,5 +1,0 @@
-module modulsix{
-	
-		exports modulsixx;
-	
-}

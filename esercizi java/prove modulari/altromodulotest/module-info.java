@@ -1,5 +1,0 @@
-module altromodulotest {
-	
-	exports altromodulare;
-	
-}

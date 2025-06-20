@@ -1,5 +1,0 @@
-module modulfour{
-	
-	exports modulquatre;
-
-}

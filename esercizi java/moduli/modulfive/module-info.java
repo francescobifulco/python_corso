@@ -1,5 +1,0 @@
-module modulfive{
-	
-	exports modulcinq;
-	
-}

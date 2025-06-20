@@ -1,5 +1,0 @@
-open weather key
-e517b10001a86fc8a52cf9872306bb23
-
-open ai key
-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

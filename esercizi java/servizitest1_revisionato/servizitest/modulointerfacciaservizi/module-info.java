@@ -1,3 +1,0 @@
-module modulointerfacciaservizi{
-	exports serviziofferti;
-}

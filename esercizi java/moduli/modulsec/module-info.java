@@ -1,5 +1,0 @@
-module modulsec{
-
-		exports modultwo;
-	
-}

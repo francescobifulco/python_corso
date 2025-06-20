@@ -1,5 +1,0 @@
-module modultre{	
-	
-	exports modultri;
-	
-}
