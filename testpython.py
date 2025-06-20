@@ -208,7 +208,7 @@ class Mago(Soldato):
     
     def attacca(self, avversario):
         danno_inflitto = random.randint(self.__min_danno_magico, self.__max_danno_magico)
-        print(f"{self._nome} lancia un incantesimo su {avversario.__nome}!")
+        print(f"{self.__nome} lancia un incantesimo su {avversario.__nome}!")
         print(f"  L'incantesimo infligge {danno_inflitto} danni.")
         avversario.difenditi(danno_inflitto)
     
@@ -242,16 +242,22 @@ class Guaritore(Soldato):
         super().__init__(nome, costo, attacco, difesa, salute)
         self.__cura = cura
     
-    def attacca(self, alleati):
-        alleati_curabili = [s for s in alleati if s.è_vivo() and s != self]
-        if not alleati_curabili:
-            print(f"{self.__nome} (Guaritore) non ha alleati da curare!")
+    def attacca(self, avversario=None):
+         if not self.giocatore_proprietario:
+            print(f"{self.nome} (Guaritore) non è associato a nessun giocatore e non può curare.")
             return
-        bersaglio_cura = random.choice(alleati_curabili)
-        cura_effettiva = self.__cura
-        bersaglio_cura.__salute += cura_effettiva 
-        print(f"{self.__nome} (Guaritore) cura {bersaglio_cura.__nome} per {cura_effettiva} punti salute!")
-        print(f"Salute attuale di {bersaglio_cura.__nome}: {bersaglio_cura.__salute}")
+         alleati = self.giocatore_proprietario.esercito 
+         alleati_curabili = [s for s in alleati if s.e_vivo() and s != self]
+        
+         if not alleati_curabili:
+            print(f"{self.nome} (Guaritore) non ha alleati vivi da curare!")
+            return
+            
+         bersaglio_cura = random.choice(alleati_curabili)
+         cura_effettiva = self.__cura
+         bersaglio_cura.salute += cura_effettiva 
+         print(f"{self.nome} (Guaritore) cura {bersaglio_cura.nome} per {cura_effettiva} punti salute!")
+         print(f"Salute attuale di {bersaglio_cura.nome}: {bersaglio_cura.salute}")
     
     def stato(self):
         return super().stato()
@@ -339,12 +345,18 @@ class Giocatore:
             print(f"\nSoldato {i+1}:")
             soldato.stato()
         print("---------------------------------------")
-    def menu_acquisto_ia(self,tipi_soldato_disponibili):
+    
+    def menu_acquisto_ia(self):     
          print(f"{self.__nome} sta acquistando rinforzi...")
          tentativi_acquisti = random.randint(1, 3)
          for indice in range(tentativi_acquisti):
-             tipo_scelto = random.choice(list(tipi_soldato_disponibili.keys()))
-             costo_soldato = tipi_soldato_disponibili[tipo_scelto]
+             tipi_acquistabili_per_budget = [tipo for tipo, costo in Giocatore.COSTI_SOLDATI.items() if self.budget >= costo]
+             if not tipi_acquistabili_per_budget:
+                print(f"  {self.nome} non ha abbastanza monete per acquistare altri soldati.")
+                break 
+
+             tipo_scelto = random.choice(tipi_acquistabili_per_budget)
+             costo_soldato = Giocatore.COSTI_SOLDATI[tipo_scelto]
              if self.budget >= costo_soldato:
                  if tipo_scelto == "Cavaliere":
                      nuovo_soldato = Cavaliere(f"IA Cavaliere {random.randint(1, 999)}")
@@ -364,14 +376,108 @@ class Giocatore:
 
 #---Raund---#
 
+print("Benvenuto a La Battaglia dei Regni!")
 turno = 0
 giocatore_umano = Giocatore("")
-ia_gio = Giocatore("IA Nemica")
-ia_gio.menu_acquisto_ia()
+giocatore_umano.inserimento()
+print(f"{giocatore_umano.nome}, è il momento di reclutare il tuo esercito iniziale!")
 giocatore_umano.menu_acquisto()
+giocatore_umano.mostra_esercito()
+
+ia_gio = Giocatore("IA Nemica")
+print(f"{ia_gio.nome} sta reclutando il suo esercito...")
+ia_gio.menu_acquisto_ia()
 ia_gio.mostra_esercito()
 
+#---- Gemini-----#
+#non sono riuscito ad implementare la parte del combatimento 
+
+ordine_actions_scontro = []
 while len(giocatore_umano.esercito) > 0 and len(ia_gio.esercito) > 0:
     turno += 1
     print(f"inizio un nuovo raund {turno}")
     
+    esercito_umano_vivo = [s for s in giocatore_umano.esercito if s.e_vivo()]
+    esercito_ia_vivo = [s for s in ia_gio.esercito if s.e_vivo()]
+    num_scontri = min(len(esercito_umano_vivo), len(esercito_ia_vivo))
+    if num_scontri == 0: 
+        print("Nessun soldato vivo per entrambi gli schieramenti in questo round.")
+        break 
+
+    for i in range(num_scontri):
+        soldato_g_umano = esercito_umano_vivo[i]
+        soldato_g_ia = esercito_ia_vivo[i]
+        print(f"Scontro {i+1}: {giocatore_umano.nome}  vs {ia_gio.nome}")
+        ordine_azioni_scontro = []
+        if isinstance(soldato_g_umano, Arciere):
+            ordine_actions_scontro.append((soldato_g_umano, soldato_g_ia, esercito_umano_vivo))
+        if isinstance(soldato_g_ia, Arciere):
+            ordine_actions_scontro.append((soldato_g_ia, soldato_g_umano, esercito_ia_vivo))
+        if not isinstance(soldato_g_umano, Arciere):
+            ordine_actions_scontro.append((soldato_g_umano, soldato_g_ia, esercito_umano_vivo))
+        if not isinstance(soldato_g_ia, Arciere):
+            ordine_actions_scontro.append((soldato_g_ia, soldato_g_umano, esercito_ia_vivo))
+            ordine_finale_scontro = []
+            visti = set() 
+            for attaccante, bersaglio, lista_alleati in ordine_actions_scontro:
+                if attaccante not in visti:
+                    ordine_finale_scontro.append((attaccante, bersaglio, lista_alleati))
+                    visti.add(attaccante)
+            for attaccante, bersaglio, lista_alleati_attaccante in ordine_finale_scontro:
+                if not attaccante.e_vivo():
+                    print(f"  {attaccante.nome} è stato sconfitto e non può agire.")
+                    continue
+
+                if isinstance(attaccante, Guaritore):
+                    attaccante.attacca(lista_alleati_attaccante)
+                else:
+                    if bersaglio.e_vivo():
+                        attaccante.attacca(bersaglio)
+                    else:
+                        print(f"{attaccante.nome} non ha un bersaglio vivo in questo scontro.")
+            print("\n  Stato dopo lo scontro:")
+            if soldato_g_umano.e_vivo(): soldato_g_umano.stato()
+            else: print(f"{soldato_g_umano.nome} è stato sconfitto.")
+
+            if soldato_g_ia.e_vivo(): soldato_g_ia.stato()
+            else: print(f"  {soldato_g_ia.nome} è stato sconfitto.")
+        print("\n--- RIMOSSA DEI CADUTI ---")
+        giocatore_umano.esercito[:] = [s for s in giocatore_umano.esercito if s.e_vivo()]
+        ia_gio.esercito[:] = [s for s in ia_gio.esercito if s.e_vivo()]
+        
+        print(f"Soldati rimasti per {giocatore_umano.nome}: {len(giocatore_umano.esercito)}")
+        giocatore_umano.mostra_esercito()
+        print(f"Soldati rimasti per {ia_gio.nome}: {len(ia_gio.esercito)}")
+        ia_gio.mostra_esercito()
+
+        if not giocatore_umano.esercito or not ia_gio.esercito:
+            break
+        print("\n--- RICOMPENSE E NUOVI ACQUISTI ---")
+        giocatore_umano.budget += 300
+        ia_gio.budget += 300
+        print(f"{giocatore_umano.nome} riceve +300 monete. Budget attuale: {giocatore_umano.budget}")
+        print(f"{ia_gio.nome} riceve +300 monete. Budget attuale: {ia_gio.budget}")
+
+        giocatore_umano.menu_acquisto()
+        ia_gio.menu_acquisto_ia() 
+        
+    print("\n" + "="*15 + " FINE DEL GIOCO " + "="*15)
+    vincitore = None
+    if len(giocatore_umano.esercito) > 0 and len(ia_gio.esercito) == 0:
+        vincitore = giocatore_umano.nome
+    elif len(ia_gio.esercito) > 0 and len(giocatore_umano.esercito) == 0:
+        vincitore = ia_gio.nome
+    else:
+        vincitore = "Nessuno (pareggio o entrambi gli eserciti annientati!)" 
+
+    print(f"\nIL VINCITORE È: {vincitore}!")
+    print(f"Round giocati: {turno}")
+
+    if vincitore == giocatore_umano.nome:
+        print(f"Soldati rimasti per {giocatore_umano.nome}: {len(giocatore_umano.esercito)}")
+        giocatore_umano.mostra_esercito()
+    elif vincitore == ia_gio.nome:
+        print(f"Soldati rimasti per {ia_gio.nome}: {len(ia_gio.esercito)}")
+        ia_gio.mostra_esercito()
+    else:
+        print("Non ci sono soldati sopravvissuti in entrambi gli schieramenti.")
