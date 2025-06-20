@@ -66,35 +66,31 @@ Introduzione della classe EventoCasuale con metodo applica(villaggio)
 Salvataggio dello stato in un file JSON tra le giornate"""
 
 from abc import ABC,abstractmethod
+COSTO_ENERGIA_LAVORO = 15
 
 class Abitante(ABC):
-    def __init__(self,nome,eta,energia):
+    
+    def __init__(self,nome,eta,energia=100):
         super().__init__()
         self.__nome = nome
         self.__eta = eta
         self.__energia = energia
     
-    @property
     def get_nome(self):
         return self.__nome
     
-    @nome.setter
     def set_nome(self, valore):
         self.__nome = valore
-    
-    @property    
+   
     def get_eta(self):
         return self.__eta
     
-    @eta.setter
     def set_eta(self, valore):
         self.__eta = valore
-    
-    @property    
+       
     def get_energia(self):
         return self.__energia
     
-    @energia.setter
     def set_energia(self, valore):
         self.__energia = valore
     
@@ -103,50 +99,70 @@ class Abitante(ABC):
         pass
     
     def riposa(self):
-        pass
+        self.energia += 20
+        self.__energia = min(self.energia, 100)
+        print(f"{self.nome} ha riposato. Nuova energia: {self.energia}")
     
     def __str__(self):
         super().__str__()
         pass
     
 class Contadino(Abitante):
-    def __init__(self, nome, eta, energia,produce_cibo):
+    def __init__(self, nome, eta, energia,produce_cibo=15):
         super().__init__(nome, eta, energia)
         self.__produce_cibo = produce_cibo
-    
-    @property
+        
     def get_produce_cibo(self):
         return self.__produce_cibo
     
-    @roduce_cibo.setter
     def set_produce_cibo(self, valore):
         self.__cibo = valore
 
     def __str__(self):
         super().__str__()
         return (f"il contadeno produre cibo")
+   
+    def lavora(self,villaggio):
+        if self.set_energia() >= COSTO_ENERGIA_LAVORO:
+            villaggio.cibo += self.__produce_cibo
+            self.energia -= COSTO_ENERGIA_LAVORO
+        else: print("e troppo stanco")
+    
+    def riposa(self):
+        if self.get_energia() < 100:
+            self.energia += 20
+        else: print("energia al massimo")
+        
     
 class Minatore(Abitante):
-    def __init__(self, nome, eta, energia,produce_pietra,produce_metallo):
+    def __init__(self, nome, eta, energia,produce_pietra=15,produce_metallo=15):
         super().__init__(nome, eta, energia)
         self.__produce_pietra = produce_pietra
         self.__produce_metallo = produce_metallo
-    
-    @property    
+       
     def get_produce_pietra(self):
         return self.__produce_pietra
     
-    @produce_pietra.setter
     def set_produce_pietra(self, valore):
         self.__produce_pietra = valore
-    
-    @property    
+   
     def get_produce_metallo(self):
         return self.__produce_metallo
     
-    @produce_metallo.setter
     def set_produce_metallo(self, valore):
         self.__produce_metallo = valore
+    
+    def lavora(self,villaggio):
+        if self.set_energia() >= COSTO_ENERGIA_LAVORO:
+            villaggio.pietra += self.__produce_pietra
+            villaggio.metallo += self.__produce_metallo
+            self.energia -= COSTO_ENERGIA_LAVORO
+        else: print("e troppo stanco")
+    
+    def riposa(self):
+        if self.get_energia() < 100:
+            self.energia += 20
+        else: print("energia al massimo")
 
     def __str__(self):
         super().__str__()
@@ -156,12 +172,15 @@ class Guerriero(Abitante):
     def __init__(self, nome, eta, energia,difende_villaggio):
         super().__init__(nome, eta, energia)
         self.__difende_villaggi = difende_villaggio
-    
-    @property    
+        
     def get_difende_villaggio(self):
         return self.__defende_villaggio
+    
+    def riposa(self):
+        if self.get_energia() < 100:
+            self.energia += 20
+        else: print("energia al massimo")
      
-    @difende_villaggio.setter
     def set_difende_villaggio(self, valore):
         self.__difende_villaggio = valore
     
@@ -176,29 +195,35 @@ class Villaggio:
         self.__metallo = metallo
         self.__abitanti = []
     
-    @property
     def get_nome_villaggio(self):
         return self.__nome_villaggio
     
-    @nome_villaggio.setter
     def set_nome_villagio(self, valore):
         self.__nome_villaggio = valore
-    
-    @property    
+   
     def get_pietra(self):
         return self.__pietra
-    
-    @pietra.setter
+
     def set_produce_pietra(self, valore):
         self.__pietra = valore
-    
-    @property    
+       
     def get_metallo(self):
-        return self.__produce_metallo
+        return self.__metallo
     
-    @metallo.setter
     def set_metallo(self, valore):
         self.__metallo = valore
     
-    def aggiungi_abitante(abitante):
-        pass
+    def aggiungi_abitante(self,abitante: Abitante):
+        self.__abitanti.append(abitante)
+        print(f"{abitante.nome} è stato aggiunto a {self.nome}.")
+    
+    def report(self):
+         print(f"\n--- Stato del Villaggio: {self.nome} ---")
+         print(f"Cibo: {self.cibo}")
+         print(f"Pietra: {self.pietra}")
+         print(f"Metallo: {self.metallo}")
+         print(f"Abitanti ({len(self.abitanti)}):")
+         if not self.abitanti:
+             print("  Nessun abitante in questo villaggio.")
+         for abitante in self.abitanti:
+             print(f"  - {abitante}")
