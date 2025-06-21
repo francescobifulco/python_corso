@@ -57,5 +57,5 @@ nome_animale = "minni"
 eta_animale = 0
 specie_animale = "Cane"
 sesso_animale = "F"
-razza_cane 
-cane = Cane(nome_animale, eta_animale, specie_animale, sesso_animale,)
+razza_cane = "labador"
+cane = Cane(nome_animale, eta_animale, specie_animale, sesso_animale,razza_cane)
