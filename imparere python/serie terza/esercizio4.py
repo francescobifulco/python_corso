@@ -11,4 +11,10 @@ print(f"la lettera 'a' compare: {conta}")
 
 #Sostituisci tutte le occorrenze della parola "Python" con "Java" (se presente) nella frase. Stampa la frase modificata.
 
+for elemento in frase:
+    if "Python" in 'Python':
+        frase.replace('Python','Java')
+        print(frase)
+    else: print("la parola 'Python' non presente")
+
 #Verifica se la frase inserita dall'utente inizia con "Ciao" e finisce con un punto esclamativo "!".
