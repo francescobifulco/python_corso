@@ -16,4 +16,8 @@ select * from ordini order by DataOrdine desc;
 #Trova il NomeProdotto e il Prezzo dei 3 prodotti più costosi.
 select NomeProdotto,prezzo from prodotti order by Prezzo limit 3;
 
-SELECT * FROM clienti WHERE Citta = 'roma';
+#Trova tutti i clienti che vivono a Roma o Milano.
+select * from clienti where citta = 'roma' or citta = 'milano';
+
+#Elenca tutti i prodotti della categoria Elettronica che hanno un prezzo superiore a 100 euro.
+select * from prodotti where Categoria = 'elettronica' and Prezzo > 100
