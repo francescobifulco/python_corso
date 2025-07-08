@@ -9,6 +9,9 @@ quoziente_intero = num1//num2
 print(f"la somma e {somma}, la differenza e {differenza}, il prodotto e {prodotto}, il quoziente per intero e {quoziente_intero}")
 
 #Calcola l'area di un cerchio. Chiedi all'utente il raggio. Stampa il risultato arrotondato a due cifre decimali.
-PI_GRECO = 3,14
+PI_GRECO = 3.14
 
-raggio = input("inserisci il raggio: ")
+raggio = float(input("inserisci il raggio: "))
+
+area = raggio*PI_GRECO*raggio
+print(f"area del cerchio e: {area}")
