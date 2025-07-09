@@ -1,0 +1,151 @@
+id_utenti,nome,cognome,citta,anno_di_nascita,eta,altezza,peso,lavoro,stipendio
+1,Francesco,Colombo,Bari,1975,50,152,100,Studente,20779
+2,Alice,Ricci,Catania,1957,68,162,66,Artigiano,27298
+3,Davide,Ferrari,Genova,1978,47,177,54,Impiegato,29153
+4,Alessandro,Rossi,Catania,1975,50,174,78,Programmatore,25789
+5,Elena,Barbieri,Napoli,1959,66,182,53,Impiegato,27999
+6,Francesco,Marino,Firenze,1975,50,187,59,Dottore,15814
+7,Federico,Bruno,Firenze,1983,42,155,66,Dottore,25541
+8,Alessandro,De Luca,Milano,2000,25,193,59,Artigiano,39938
+9,Alessandro,Ricci,Genova,1990,35,194,66,Commerciante,17443
+10,Sofia,Silvestri,Bologna,1956,69,181,69,Studente,25457
+11,Elena,Costa,Milano,1953,72,194,73,Artigiano,25380
+12,Giulia,Costa,Catania,2002,23,170,54,Libero Professionista,22783
+13,Marco,Silvestri,Milano,1999,26,165,83,Insegnante,32368
+14,Laura,Bruno,Catania,1994,31,170,55,Studente,30328
+15,Chiara,Romano,Roma,1960,65,160,51,Studente,41215
+16,Marco,Bianchi,Firenze,1978,47,186,62,Libero Professionista,48595
+17,Luca,Verdi,Roma,2005,20,185,92,Libero Professionista,42306
+18,Laura,Costa,Bari,1985,40,184,92,Ingegnere,34915
+19,Laura,Ferrari,Genova,1974,51,168,97,Artigiano,30343
+20,Giovanni,Costa,Bologna,1970,55,169,60,Libero Professionista,15126
+21,Sara,Costa,Catania,1985,40,167,100,Dottore,42632
+22,Anna,Costa,Bologna,1959,66,190,96,Programmatore,35530
+23,Davide,Bianchi,Catania,1986,39,163,72,Insegnante,18368
+24,Davide,Bianchi,Napoli,1958,67,164,65,Artigiano,18797
+25,Federico,Ferrari,Milano,1973,52,180,80,Designer,28718
+26,Laura,Rossi,Bari,1984,41,150,60,Dottore,49560
+27,Alice,Rossi,Firenze,1998,27,152,65,Commerciante,26053
+28,Giulia,Barbieri,Catania,1984,41,165,57,Libero Professionista,37116
+29,Andrea,Bianchi,Bologna,1997,28,172,53,Designer,16645
+30,Federico,Bruno,Bari,1985,40,160,89,Libero Professionista,34256
+31,Francesco,Esposito,Torino,1967,58,161,53,Studente,49622
+32,Matteo,Russo,Torino,1998,27,159,74,Dottore,17708
+33,Francesco,Greco,Roma,1988,37,181,52,Studente,26694
+34,Maria,Costa,Firenze,1981,44,165,81,Ingegnere,24524
+35,Sofia,Esposito,Napoli,1973,52,157,52,Studente,46880
+36,Martina,Ferrari,Bologna,1972,53,187,76,Ingegnere,47409
+37,Maria,Silvestri,Milano,1981,44,161,78,Ingegnere,28224
+38,Matteo,Bianchi,Milano,1986,39,173,81,Designer,40150
+39,Marco,Esposito,Bologna,1961,64,177,99,Libero Professionista,49393
+40,Alice,Greco,Genova,1998,27,157,100,Commerciante,22973
+41,Davide,Mancini,Napoli,2004,21,177,68,Studente,23577
+42,Francesco,Mancini,Bari,1962,63,185,70,Dottore,23070
+43,Laura,Rossi,Catania,1972,53,175,54,Ingegnere,23666
+44,Elena,Ricci,Genova,1974,51,157,67,Libero Professionista,21783
+45,Davide,Esposito,Catania,1984,41,177,77,Insegnante,19971
+46,Giulia,Mancini,Catania,1990,35,177,91,Artigiano,28490
+47,Martina,Verdi,Genova,1979,46,186,71,Designer,16990
+48,Giovanni,Silvestri,Roma,1966,59,190,70,Commerciante,20299
+49,Sofia,Russo,Torino,1998,27,185,55,Impiegato,34956
+50,Maria,Barbieri,Catania,1969,56,176,50,Designer,37359
+51,Elena,Verdi,Genova,1997,28,166,54,Insegnante,43734
+52,Sofia,Barbieri,Genova,1974,51,158,90,Artigiano,19757
+53,Marco,Silvestri,Palermo,1971,54,182,61,Insegnante,34097
+54,Chiara,Romano,Roma,1962,63,169,75,Studente,25395
+55,Sara,Silvestri,Firenze,1968,57,162,95,Ingegnere,31241
+56,Sofia,Ricci,Palermo,1998,27,177,83,Commerciante,42696
+57,Maria,Rossi,Palermo,1985,40,178,98,Programmatore,19944
+58,Laura,Colombo,Bologna,1961,64,162,63,Ingegnere,34816
+59,Marco,Romano,Torino,1990,35,195,75,Programmatore,39917
+60,Sara,Fontana,Genova,1968,57,184,94,Artigiano,46195
+61,Sofia,Colombo,Torino,1961,64,155,76,Libero Professionista,36566
+62,Martina,Rossi,Napoli,1958,67,167,58,Impiegato,24916
+63,Anna,Greco,Bologna,1956,69,154,75,Dottore,35806
+64,Davide,Fontana,Firenze,1977,48,174,96,Ingegnere,24984
+65,Elena,Marino,Torino,1963,62,151,71,Commerciante,16759
+66,Martina,Verdi,Milano,1980,45,159,96,Insegnante,41838
+67,Elena,Romano,Catania,2001,24,179,79,Commerciante,17482
+68,Anna,Mancini,Napoli,1968,57,194,92,Artigiano,39442
+69,Simone,Mancini,Roma,1996,29,154,97,Programmatore,48719
+70,Maria,Silvestri,Firenze,1965,60,182,66,Insegnante,42965
+71,Davide,Costa,Napoli,2002,23,150,75,Dottore,17079
+72,Simone,Bianchi,Catania,1954,71,167,85,Dottore,17717
+73,Matteo,Rossi,Bologna,1984,41,181,50,Ingegnere,42952
+74,Davide,Mancini,Catania,1961,64,160,57,Artigiano,35908
+75,Simone,Bruno,Palermo,1974,51,170,98,Libero Professionista,39861
+76,Luca,Ferrari,Catania,2001,24,175,84,Artigiano,22311
+77,Francesco,Ferrari,Palermo,1970,55,174,64,Programmatore,43071
+78,Matteo,Ricci,Bologna,1985,40,171,96,Commerciante,38570
+79,Luca,Ricci,Bari,2002,23,176,71,Dottore,33449
+80,Laura,Verdi,Palermo,1972,53,162,63,Commerciante,48536
+81,Elena,Barbieri,Roma,1965,60,182,75,Commerciante,43865
+82,Alessandro,Mancini,Catania,1988,37,183,77,Commerciante,21645
+83,Federico,Mancini,Catania,1994,31,190,72,Dottore,41737
+84,Giovanni,Verdi,Roma,2002,23,184,63,Designer,26485
+85,Elena,Silvestri,Milano,1991,34,150,73,Studente,40522
+86,Giulia,Rossi,Genova,1988,37,170,51,Programmatore,27342
+87,Giulia,Silvestri,Bari,1963,62,155,94,Designer,28087
+88,Luca,Greco,Firenze,1980,45,177,75,Programmatore,49249
+89,Andrea,Costa,Palermo,1954,71,166,63,Insegnante,25093
+90,Sara,Colombo,Roma,1984,41,154,100,Artigiano,31438
+91,Francesco,Russo,Bologna,1972,53,180,56,Artigiano,41399
+92,Matteo,Esposito,Palermo,1978,47,154,52,Impiegato,34846
+93,Francesco,Colombo,Genova,1992,33,187,96,Artigiano,30708
+94,Matteo,Silvestri,Bologna,1960,65,152,72,Dottore,25998
+95,Elena,Verdi,Napoli,1967,58,172,95,Libero Professionista,45678
+96,Laura,Mancini,Catania,1996,29,186,92,Ingegnere,25682
+97,Marco,Verdi,Napoli,1961,64,186,96,Impiegato,23519
+98,Luca,Fontana,Palermo,1958,67,159,94,Ingegnere,46480
+99,Anna,Conti,Genova,1959,66,159,67,Programmatore,34694
+100,Andrea,Fontana,Bari,1993,32,168,87,Ingegnere,18300
+101,Giulia,Bianchi,Palermo,1966,59,166,84,Ingegnere,21722
+102,Laura,Verdi,Roma,1987,38,170,100,Impiegato,39160
+103,Elena,Mancini,Torino,1956,69,163,64,Insegnante,35059
+104,Giulia,Ricci,Palermo,1995,30,158,74,Commerciante,28575
+105,Luca,Russo,Catania,1962,63,195,86,Artigiano,22970
+106,Giulia,Rossi,Catania,1989,36,150,77,Artigiano,49911
+107,Andrea,Russo,Palermo,1991,34,194,59,Dottore,36591
+108,Davide,Rossi,Bologna,1958,67,162,88,Impiegato,46821
+109,Martina,Conti,Torino,1999,26,153,66,Dottore,24503
+110,Giulia,Mancini,Roma,1976,49,150,88,Libero Professionista,33922
+111,Luca,Silvestri,Palermo,1951,74,189,71,Libero Professionista,27175
+112,Andrea,Colombo,Bologna,1954,71,181,75,Dottore,36389
+113,Martina,Romano,Catania,1978,47,183,93,Impiegato,15822
+114,Francesco,Verdi,Catania,1986,39,177,74,Dottore,32327
+115,Matteo,Costa,Genova,1987,38,180,66,Artigiano,21150
+116,Davide,Rossi,Palermo,1968,57,157,62,Designer,19425
+117,Davide,Mancini,Torino,1957,68,188,69,Studente,31032
+118,Sara,Bruno,Milano,1997,28,175,74,Ingegnere,17198
+119,Simone,Barbieri,Torino,1994,31,183,53,Studente,35079
+120,Federico,Conti,Catania,1950,75,152,59,Impiegato,28859
+121,Francesco,Esposito,Catania,1971,54,161,52,Studente,46419
+122,Giovanni,Esposito,Napoli,2001,24,150,90,Libero Professionista,23705
+123,Alice,Gallo,Catania,1966,59,193,94,Programmatore,38236
+124,Sofia,Barbieri,Roma,1956,69,154,67,Ingegnere,37419
+125,Andrea,Colombo,Firenze,1974,51,179,96,Commerciante,34978
+126,Francesco,Bianchi,Palermo,1994,31,179,85,Impiegato,30358
+127,Simone,Rossi,Torino,1953,72,166,96,Ingegnere,49177
+128,Davide,De Luca,Firenze,1985,40,172,71,Studente,44378
+129,Alessandro,Rossi,Bologna,1955,70,164,83,Libero Professionista,26382
+130,Sofia,Ferrari,Milano,1980,45,186,96,Insegnante,29596
+131,Simone,Mancini,Roma,1968,57,170,57,Designer,48572
+132,Francesco,Barbieri,Torino,1993,32,163,89,Commerciante,28221
+133,Federico,Russo,Firenze,2003,22,151,98,Designer,16279
+134,Marco,Verdi,Milano,1988,37,160,93,Ingegnere,22083
+135,Sara,Costa,Napoli,1976,49,188,68,Libero Professionista,32771
+136,Simone,Costa,Roma,1959,66,187,91,Libero Professionista,44975
+137,Chiara,Bruno,Roma,1975,50,183,90,Studente,34063
+138,Laura,Conti,Napoli,1968,57,187,86,Artigiano,17106
+139,Laura,Esposito,Palermo,1988,37,183,55,Studente,39557
+140,Alice,Verdi,Napoli,1952,73,167,75,Artigiano,35607
+141,Alessandro,Ricci,Roma,1994,31,179,83,Artigiano,43529
+142,Francesco,Ferrari,Roma,1962,63,164,94,Commerciante,42856
+143,Luca,Costa,Firenze,1999,26,176,55,Studente,17573
+144,Luca,Conti,Catania,1977,48,183,86,Insegnante,27808
+145,Alice,Verdi,Milano,1969,56,187,82,Dottore,49072
+146,Simone,Rossi,Napoli,1977,48,182,71,Dottore,38752
+147,Matteo,Silvestri,Milano,1957,68,173,70,Studente,32685
+148,Giulia,Rossi,Napoli,1990,35,164,55,Studente,26372
+149,Francesco,Verdi,Bologna,1988,37,179,55,Designer,23996
+150,Chiara,Fontana,Roma,1950,75,191,97,Commerciante,31458
