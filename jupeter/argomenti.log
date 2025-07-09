@@ -1,0 +1,38 @@
+
+# elenco dei argomenti in python
+1. stampare (come stampare su python)
+2. chiedere all'utente (imput)
+3. calcolare (come fare operazioni su python)
+4. variabili
+5. tipi di dati
+6. stringhe con i loro metodi
+7. liste,dizionari,tuple,set con i loro metodi
+8. gli operatori su python
+9. if/else/elif
+10. cicli for e while range() break e continue e pass
+11. funzioni e con i parametri e valore di ritorno
+12. classi, attributi,metodi, oggetti
+13. moduli
+14. ereditarieta
+15. incapsulamento privati e protetti
+16. polimorfismo
+17. overriding dei metodi
+18. astrazione
+19. ipython
+20. spyder
+21. gestione dei file
+22. pandas
+23. gestione degli eccezzioni
+24. numpy
+25. pandas dataframe e series
+26. matplotlib
+27. seaborn
+28. random
+29. datetime
+30. json e join e API
+31. mysql
+32. mysqlq con python
+33. csv
+34. jupiter
+35. kaggle
+36. machene learning
