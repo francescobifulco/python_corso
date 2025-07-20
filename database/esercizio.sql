@@ -20,4 +20,7 @@ select NomeProdotto,prezzo from prodotti order by Prezzo limit 3;
 select * from clienti where citta = 'roma' or citta = 'milano';
 
 #Elenca tutti i prodotti della categoria Elettronica che hanno un prezzo superiore a 100 euro.
-select * from prodotti where Categoria = 'elettronica' and Prezzo > 100
+select * from prodotti where Categoria = 'elettronica' and Prezzo > 100;
+
+#Mostra tutti i prodotti la cui Categoria non è Cancelleria.
+select * from 

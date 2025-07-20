@@ -1,0 +1,50 @@
+{
+    "nome": [
+        "Luca Rossi",
+        "Giulia Bianchi",
+        "Marco Verdi",
+        "Sofia Gialli",
+        "Andrea Neri",
+        "Francesca Romano",
+        "Alessandro Ferrari",
+        "Chiara Marino",
+        "Davide Esposito",
+        "Sara Ricci"
+    ],
+    "eta": [
+        25,
+        32,
+        41,
+        28,
+        35,
+        22,
+        48,
+        38,
+        29,
+        42
+    ],
+    "citta": [
+        "Roma",
+        "Milano",
+        "Napoli",
+        "Torino",
+        "Firenze",
+        "Venezia",
+        "Bologna",
+        "Palermo",
+        "Genova",
+        "Bari"
+    ],
+    "interessi": [
+        "Musica",
+        "Sport",
+        "Lettura",
+        "Viaggi",
+        "Cucina",
+        "Fotografia",
+        "Tecnologia",
+        "Arte",
+        "Teatro",
+        "Danza"
+    ]
+}
