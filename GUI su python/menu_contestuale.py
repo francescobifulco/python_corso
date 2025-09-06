@@ -18,21 +18,25 @@ root.maxsize(1000,1000) #dimensione massima della finestra
 root.lift() #va aventi 
 #root.lower() #va indietro
 
-menubar = Menu(root)
-root.config(menu=menubar)
+frame = Frame(
+    root,
+    background='red'
+)
+frame.pack(expand=True, fill=BOTH)
 
-file_menu = Menu(menubar, tearoff=0)
-file_menu.add_command(label='New', command=root.quit)
-file_menu.add_command(label='Open', command=root.quit)
+ctx_menu = Menu(root, tearoff=0)
+ctx_menu.add_command(label='Taglia')
+ctx_menu.add_command(label='Copia')
+ctx_menu.add_command(label='Incolla')
+ctx_menu.add_separator()
+ctx_menu.add_command(label='Prova')
 
-file_altro_submenu = Menu(file_menu, tearoff=0)
-file_altro_submenu.add_cascade(label='ciao')
-file_altro_submenu.add_cascade(label='buongiorno')
-file_menu.add_cascade(label='Altro', menu=file_altro_submenu)
+def ctx_menu_popup(event):
+    try:
+        ctx_menu.tk_popup(event.x_root, event.y_root)
+    finally:
+        ctx_menu.grab_release()
 
-file_menu.add_separator()
-file_menu.add_command(label='Exit', command=root.quit)
-
-menubar.add_cascade(label='File', menu=file_menu)
+frame.bind('<Button-3>', ctx_menu_popup)
 
 root.mainloop() #mi fa mantenere la finestra aperta 
