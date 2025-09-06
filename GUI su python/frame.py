@@ -19,6 +19,20 @@ root.lift() #va aventi
 #root.lower() #va indietro 
 
 
+frame0 = LabelFrame(
+    root,
+    #background='red',
+    text='sono label frame',
+    padx=10,
+    pady=50,
+    height=100,
+    width=200
+)
+frame0.pack(
+    #fill=X,
+    #expand=True
+    )
+
 frame1 = Frame(
     root,
     background='red',
@@ -32,6 +46,49 @@ frame1.pack(
     #expand=True
     )
 
+frame2 = Frame(
+    root,
+    background='yellow',
+    padx=10,
+    pady=50,
+    height=100,
+    width=200
+)
+frame2.pack(
+    #fill=X,
+    #expand=True
+    )
 
+frame3 = Frame(
+    root,
+    background='green',
+    padx=10,
+    pady=50,
+    height=100,
+    width=200
+)
+frame3.pack(
+    #fill=X,
+    #expand=True
+    )
+
+
+button1 = Button(
+    frame1,
+    text='ciao'
+)
+button1.pack()
+
+button2 = Button(
+    frame2,
+    text='ciao'
+)
+button2.pack()
+
+button3 = Button(
+    frame3,
+    text='ciao'
+)
+button3.pack()
 
 root.mainloop() #mi fa mantenere la finestra aperta 
