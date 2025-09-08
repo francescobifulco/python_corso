@@ -1,25 +1,43 @@
-# inporto le liberie di tkinter
+# Importiamo le librerie necessarie: tkinter per l'interfaccia, ttk per i widget moderni
 from tkinter import *
 from tkinter import ttk
-from calendar import month_name 
-from tkinter import scrolledtext
-from tkinter.messagebox import showinfo
+from tkinter import scrolledtext # Scrolledtext per il widget di testo con scorrimento automatico.
 
-root = Tk() #mi crea la finestra ma chiude subito
+# Creiamo la finestra principale dell'applicazione (la radice del nostro programma)
+root = Tk() 
 
-root.title('il nostro programma') #definiama il titolo della finesta
-root.geometry('600x400+500+500') #le dimensioni della finestra
-#root.iconbitmap("internet.ico") #imposto la mia icona
-#root.resizable(False,True)
+# Definiamo il titolo della finestra
+root.title('il nostro programma') 
 
-root.minsize(400,100) #dimensione minima della finestra 
-root.maxsize(1000,1000) #dimensione massima della finestra
+# Impostiamo la dimensione e la posizione iniziale della finestra (larghezza x altezza + posizione x + posizione y)
+root.geometry('600x400+500+500') 
 
-#root.attributes('-alpha',0.5) #trasparenza della finesta
+# Disabilita o abilita la ridimensionabilità della finestra in larghezza e/o altezza
+# root.resizable(False, True) 
 
-#root.attributes('-topmost',1) #va sempre sopra
-root.lift() #va aventi 
-#root.lower() #va indietro
+# Imposta la dimensione minima della finestra che l'utente può raggiungere
+root.minsize(400, 100) 
+
+# Imposta la dimensione massima della finestra che l'utente può raggiungere
+root.maxsize(1000, 1000) 
+
+#root.iconbitmap("internet.ico") # Imposto la mia icona
+
+# Imposta il livello di trasparenza della finestra (da 0.0 a 1.0)
+# root.attributes('-alpha', 0.5) 
+
+# Fa sì che la finestra rimanga sempre sopra le altre
+# root.attributes('-topmost', 1) 
+
+# Sposta la finestra in primo piano, portandola sopra le altre finestre
+root.lift() 
+
+# Sposta la finestra in secondo piano, dietro le altre finestre
+# root.lower()
+
+# La sezione commentata qui sotto mostra l'uso di un widget Listbox con una Scrollbar
+# implementata manualmente. Il codice successivo utilizza un widget più semplice,
+# ScrolledText, che integra già la funzionalità di scorrimento.
 
 '''linguaggi = (
     'Javascript',
@@ -86,15 +104,26 @@ scrollbar.grid(
 listbox['yscrollcommand'] = scrollbar.set
 '''
 
+# --- Creazione del Widget ScrolledText ---
+
+# Creiamo un widget ScrolledText.
+# Questo widget è una combinazione di un widget Text e di una Scrollbar,
+# il che lo rende ideale per campi di testo multi-linea con contenuti lunghi.
 scrolledtxt = scrolledtext.ScrolledText(
     root,
-    width=50,
-    height=10
+    width=50,  # Imposta la larghezza del widget in caratteri.
+    height=10  # Imposta l'altezza del widget in righe.
 )
+
+# Posizioniamo il widget ScrolledText nella finestra.
+# 'fill=BOTH' estende il widget per riempire lo spazio sia in orizzontale che in verticale.
+# 'side=LEFT' lo allinea a sinistra all'interno dello spazio del suo contenitore.
+# 'expand=True' permette al widget di espandersi per riempire lo spazio extra se la finestra viene ridimensionata.
 scrolledtxt.pack(
     fill=BOTH, 
     side=LEFT, 
     expand=True
     )
 
-root.mainloop() #mi fa mantenere la finestra aperta 
+root.mainloop() # Avvia il "loop" principale di Tkinter.
+# Questo mantiene la finestra aperta e in ascolto degli eventi (click, ridimensionamento, ecc.)
