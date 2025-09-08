@@ -1,8 +1,8 @@
 # inporto le liberie di tkinter
+import time
 from tkinter import *
 from tkinter import ttk
-from tkinter import filedialog
-import mysql.connector
+import threading
 
 root = Tk() #mi crea la finestra ma chiude subito
 
@@ -20,6 +20,24 @@ root.maxsize(1000,1000) #dimensione massima della finestra
 root.lift() #va aventi 
 #root.lower() #va indietro
 
+def dormi():
+    time.sleep(5)
+    print('stavo dormendo...')
+def mangia():
+    print('stavo mangiando...')
 
+button1 = Button(
+    root,
+    text='dormi',
+    command=lambda: threading.Thread(target=dormi).start()
+)
+button1.pack(expand=True, fill=X)
+
+button2 = Button(
+    root,
+    text='mangia',
+    command=mangia
+)
+button2.pack(expand=True, fill=X)
 
 root.mainloop() #mi fa mantenere la finestra aperta 
