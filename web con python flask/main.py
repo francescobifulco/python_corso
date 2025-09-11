@@ -5,3 +5,6 @@ app = Flask(__name__)  # Crea l'app Flask
 @app.route('/')        # Definisce una route per la homepage
 def hello():
     return render_template('index.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
