@@ -1,3 +1,1 @@
-import cowsay
-
-cowsay.cow("Good Mooooorning!")
+print('hello ')
