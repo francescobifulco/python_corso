@@ -1,0 +1,182 @@
+[
+  {
+    "Squadra": "Inter",
+    "Punti": 82,
+    "Vittorie": 25,
+    "Pareggi": 7,
+    "Sconfitte": 6,
+    "Gol_Fatti": 70,
+    "Gol_Subiti": 30
+  },
+  {
+    "Squadra": "Juventus",
+    "Punti": 78,
+    "Vittorie": 24,
+    "Pareggi": 6,
+    "Sconfitte": 8,
+    "Gol_Fatti": 65,
+    "Gol_Subiti": 33
+  },
+  {
+    "Squadra": "Milan",
+    "Punti": 74,
+    "Vittorie": 22,
+    "Pareggi": 8,
+    "Sconfitte": 8,
+    "Gol_Fatti": 68,
+    "Gol_Subiti": 35
+  },
+  {
+    "Squadra": "Napoli",
+    "Punti": 72,
+    "Vittorie": 21,
+    "Pareggi": 9,
+    "Sconfitte": 8,
+    "Gol_Fatti": 64,
+    "Gol_Subiti": 32
+  },
+  {
+    "Squadra": "Roma",
+    "Punti": 65,
+    "Vittorie": 19,
+    "Pareggi": 8,
+    "Sconfitte": 11,
+    "Gol_Fatti": 60,
+    "Gol_Subiti": 40
+  },
+  {
+    "Squadra": "Lazio",
+    "Punti": 60,
+    "Vittorie": 17,
+    "Pareggi": 9,
+    "Sconfitte": 12,
+    "Gol_Fatti": 55,
+    "Gol_Subiti": 42
+  },
+  {
+    "Squadra": "Atalanta",
+    "Punti": 58,
+    "Vittorie": 16,
+    "Pareggi": 10,
+    "Sconfitte": 12,
+    "Gol_Fatti": 58,
+    "Gol_Subiti": 45
+  },
+  {
+    "Squadra": "Fiorentina",
+    "Punti": 55,
+    "Vittorie": 15,
+    "Pareggi": 10,
+    "Sconfitte": 13,
+    "Gol_Fatti": 50,
+    "Gol_Subiti": 48
+  },
+  {
+    "Squadra": "Torino",
+    "Punti": 52,
+    "Vittorie": 14,
+    "Pareggi": 10,
+    "Sconfitte": 14,
+    "Gol_Fatti": 48,
+    "Gol_Subiti": 50
+  },
+  {
+    "Squadra": "Sassuolo",
+    "Punti": 50,
+    "Vittorie": 13,
+    "Pareggi": 11,
+    "Sconfitte": 14,
+    "Gol_Fatti": 47,
+    "Gol_Subiti": 52
+  },
+  {
+    "Squadra": "Udinese",
+    "Punti": 48,
+    "Vittorie": 13,
+    "Pareggi": 9,
+    "Sconfitte": 16,
+    "Gol_Fatti": 45,
+    "Gol_Subiti": 53
+  },
+  {
+    "Squadra": "Empoli",
+    "Punti": 46,
+    "Vittorie": 12,
+    "Pareggi": 10,
+    "Sconfitte": 16,
+    "Gol_Fatti": 43,
+    "Gol_Subiti": 55
+  },
+  {
+    "Squadra": "Spezia",
+    "Punti": 44,
+    "Vittorie": 11,
+    "Pareggi": 11,
+    "Sconfitte": 16,
+    "Gol_Fatti": 42,
+    "Gol_Subiti": 56
+  },
+  {
+    "Squadra": "Monza",
+    "Punti": 42,
+    "Vittorie": 11,
+    "Pareggi": 9,
+    "Sconfitte": 18,
+    "Gol_Fatti": 40,
+    "Gol_Subiti": 58
+  },
+  {
+    "Squadra": "Bologna",
+    "Punti": 40,
+    "Vittorie": 10,
+    "Pareggi": 10,
+    "Sconfitte": 18,
+    "Gol_Fatti": 38,
+    "Gol_Subiti": 60
+  },
+  {
+    "Squadra": "Verona",
+    "Punti": 38,
+    "Vittorie": 9,
+    "Pareggi": 11,
+    "Sconfitte": 18,
+    "Gol_Fatti": 36,
+    "Gol_Subiti": 62
+  },
+  {
+    "Squadra": "Salernitana",
+    "Punti": 36,
+    "Vittorie": 8,
+    "Pareggi": 12,
+    "Sconfitte": 18,
+    "Gol_Fatti": 34,
+    "Gol_Subiti": 63
+  },
+  {
+    "Squadra": "Lecce",
+    "Punti": 35,
+    "Vittorie": 9,
+    "Pareggi": 8,
+    "Sconfitte": 21,
+    "Gol_Fatti": 33,
+    "Gol_Subiti": 65
+  },
+  {
+    "Squadra": "Frosinone",
+    "Punti": 33,
+    "Vittorie": 8,
+    "Pareggi": 9,
+    "Sconfitte": 21,
+    "Gol_Fatti": 30,
+    "Gol_Subiti": 66
+  },
+  {
+    "Squadra": "Cremonese",
+    "Punti": 30,
+    "Vittorie": 7,
+    "Pareggi": 9,
+    "Sconfitte": 22,
+    "Gol_Fatti": 28,
+    "Gol_Subiti": 68
+  }
+]
