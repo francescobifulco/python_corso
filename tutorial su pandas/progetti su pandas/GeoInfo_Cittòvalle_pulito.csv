@@ -1,0 +1,27 @@
+ID,Quartiere,Latitudine,Longitudine,Popolazione,Altitudine (m),Superficie (km2),Tipo Zona
+1,Centro Storico,45.4628,9.107,18230.0,135.0,2.3,residenziale
+2,Borgo Nord,45.467,9.109,12000.0,142.0,3.1,misto
+3,Borgo dei Fiori,45.456,9.112,130.0,128.0,4.0,residenziale
+4,Colline Verdi,130.0,9.118,8300.0,200.0,5.5,rurale
+5,Industriale,45.47,9.115,34000.0,130.0,130.0,industriale
+6,Porto Argenteo,45.4628,9.107,18100.0,135.0,2.3,Residenziale
+7,Parco Est,45.459,130.0,5900.0,110.0,3.4,verde
+8,borgo settentrionale,45.467,9.109,12200.0,142.0,3.1,MISTO
+9,Zona sud-est,45.4559,9.1121,130.0,127.0,4.0,residenziale
+11,ValleOvest,45.4632,9.103,9200.0,121.0,2.9,Residenziale
+12,Villa Aurora,45.467,9.109,12150.0,142.0,3.1,Misto
+15,Valle delle Rose,45.471,9.12,18400.0,138.0,3.8,commerciale
+16,Prati Ventosi,45.471,9.12,18300.0,138.0,3.8,Commerciale
+17,Collina degli Ulivi,45.468,9.116,0.0,145.0,3.0,Residenziale
+19,Borgo Antico Lido,130.0,9.118,8250.0,202.0,5.5,rurale
+20,Nuova zona,45.472,9.122,15000.0,139.0,4.2,Residenziale
+21,Vecchia zona,45.44,9.099,-200.0,125.0,3.3,Residenziale
+22,Centro Antico,45.4628,9.107,17900.0,135.0,2.3,residenziale
+23,Riva delle Stelle,45.459,9.114,6100.0,110.0,3.4,Verde
+24,Zona Sud,45.453,9.11,130.0,127.0,4.1,residenziale
+25,Montealto,45.48,9.14,4300.0,260.0,6.5,rurale
+26,zona expo,45.471,9.12,18500.0,138.0,3.8,commerciale
+27,Villaggio Lago,45.475,9.099,7200.0,130.0,3.9,residenziale
+28,Quartiere Luna,45.468,9.116,100.0,145.0,3.0,residenziale
+29,Campagna Sud,45.451,9.1,3600.0,130.0,6.2,Rurale
+30,Zona Est,45.46,9.111,10500.0,132.0,3.6,residenziale

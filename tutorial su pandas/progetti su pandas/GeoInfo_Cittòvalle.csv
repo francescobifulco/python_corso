@@ -1,0 +1,31 @@
+ID,Quartiere,Latitudine,Longitudine,Popolazione,Altitudine (m),Superficie (km2),Tipo Zona,Note
+1,Centro Storico,45.4628,9.107,18230,135,2.3,residenziale,centro turisticO
+2,Borgo Nord,45.467,9.109,12000,142,3.1,misto,zona industriale vicino al fiume
+3,zona sud est,45.456,9.112,-,128,4.0,residenziale,presenza di scuole
+4,Colline Verdi,nd,9.118,8300,200,5.5,rurale,altitudine da verificare
+5,Industriale,45.470,9.115,34000,130,n/d,industriale,Dati da confermare
+6,centro storico,45.4628,9.107,18100,135,2.3,Residenziale,duplicato (vedi ID 1)
+7,Parco Est,45.459,-,5900,110,3.4,verde,coordinate incomplete
+8,Borgo Nord,45.467,9.109,12200,142,3.1,MISTO,possibile duplicato (ID 2)
+9,Zona sud-est,45.4559,9.1121,n.d.,127,4.0,residenziale,varianti nel nome
+10,N/A,45.46,9.11,10100,129,3.0,sconosciuto,nome mancante
+11,ValleOvest,45.4632,9.103,9200,121,2.9,Residenziale,nuovo quartiere
+12,Borgo Nord,45.467,9.109,12150,142,3.1,Misto,terzo duplicato
+13,Campagna Sud,45.451,9.100,3400,,6.2,rurale,altitudine mancante
+14,Parco est,45.459,-,,110,3.4,Verde,coordinate mancanti
+15,Zona Expo,45.471,9.120,18400,138,3.8,commerciale,zona fieristica
+16,ZonaExpo,45.471,9.120,18300,138,3.8,Commerciale,simile a ID 15
+17,Quartiere Luna,45.468,9.116,0,145,3.0,Residenziale,Popolazione forse errata
+18,N/A,,,9800,133,2.5,sconosciuto,dati completamente mancanti
+19,Colline verdi,N.D,9.118,8250,202,5.5,rurale,maiuscole incoerenti
+20,Nuova zona,45.472,9.122,15000,139,4.2,Residenziale,-
+21,Vecchia zona,45.440,9.099,-200,125,3.3,Residenziale,valore popolazione negativo
+22,Centro Antico,45.4628,9.107,17900,135,2.3,residenziale,possibile duplicato di centro
+23,ParcoEst,45.459,9.114,6100,110,3.4,Verde,varianti su Parco Est
+24,Zona Sud,45.453,9.110,n.d.,127,4.1,residenziale,popolazione mancante
+25,Montealto,45.480,9.140,4300,260,6.5,rurale,zona collinare
+26,zona expo,45.471,9.120,18500,138,3.8,commerciale,altra variante
+27,Villaggio Lago,45.475,9.099,7200,-,3.9,residenziale,altitudine assente
+28,Quartiere Luna,45.468,9.116,100,145,3.0,residenziale,duplicato con variazione pop.
+29,Campagna Sud,45.451,9.100,3600,N.D.,6.2,Rurale,duplicato con nome identico
+30,ZonaEst,45.460,9.111,10500,132,3.6,residenziale,nome scritto unito
