@@ -1,0 +1,36 @@
+ID Transazione,ID Cliente,Importo (€),Prodotto,Nome,Paese
+1,101,45.6,Maglietta,Mario Rossi,Italia
+2,102,89.99,Scarpe,Giulia Bianchi,Italia
+3,103,120.0,Giacca,Luca Verdi,Italia
+4,104,15.0,Cappello,Sara Neri,Italia
+5,105,55.5,Jeans,Francesco Gallo,Italia
+6,101,35.0,Felpa,Mario Rossi,Italia
+7,106,250.0,Smartphone,Laura Fontana,Italia
+8,107,19.99,Calzini,Andrea Marino,Italia
+9,108,75.0,Orologio,Elisa Greco,Italia
+10,109,40.0,Zaino,Marco Conti,Italia
+11,110,15.99,Sciarpa,Chiara Romano,Italia
+12,111,350.0,Tablet,Giovanni Riva,Svizzera
+13,112,22.5,Cintura,Martina De Luca,Italia
+14,113,120.0,Scarpe da corsa,Alessandro Serra,Francia
+15,114,75.5,Giacca a vento,Paola Testa,Germania
+16,115,60.0,Pantaloni,Fabio Moretti,Italia
+17,116,25.0,Guanti,Sofia Rizzi,Italia
+18,117,85.0,Scarpe da trekking,Matteo Colombo,Italia
+19,118,100.0,Borsa,Isabella Costa,Italia
+20,119,10.0,Cappellino,Nicola De Angelis,Italia
+21,120,45.0,Maglietta,Valentina Fabbri,Italia
+22,121,140.0,Giacca,Lorenzo Ferri,Italia
+23,122,90.0,Scarpe,Alice Marchetti,Francia
+24,123,15.5,Calzini,Emanuele Gatti,Italia
+25,124,30.0,Felpa,Beatrice Sala,Italia
+26,125,55.0,Jeans,Tommaso Villa,Svizzera
+27,126,18.0,Sciarpa,Camilla Cattaneo,Italia
+28,127,300.0,Laptop,Simone Barbieri,Italia
+29,128,20.0,Cintura,Anna Rinaldi,Italia
+30,129,65.0,Giacca a vento,Giovanni Battaglia,Italia
+31,130,50.0,Pantaloni,Irene Martelli,Italia
+32,131,27.0,Guanti,Davide Amato,Germania
+33,132,80.0,Scarpe da trekking,Federica Sartori,Italia
+34,133,95.0,Borsa,Alberto Bianchi,Italia
+35,134,12.0,Cappellino,Cristina De Santis,Italia
