@@ -1,0 +1,60 @@
+price,area,rooms,bathrooms,floor,building_age,garage,heating_type,condition,neighborhood,city,property_type,status,energy_class,agency,view,flooring
+250,85,3,1,2,10,1,1,3,2,Roma,Appartamento,Disponibile,B,CasaFacile,Città,Parquet
+180,60,2,1,1,25,0,2,2,1,Napoli,Appartamento,Venduto,D,ImmobilPoint,Cortile,Gres
+320,120,4,2,3,5,1,1,4,3,Milano,Villa,Disponibile,A,TopRe,Mare,Marmo
+140,45,1,1,0,40,0,0,1,0,Bari,Monolocale,In trattativa,F,CasaFacile,Città,Moquette
+210,75,3,1,1,15,1,2,2,2,Torino,Appartamento,Disponibile,C,ImmobilPoint,Montagna,Gres
+300,100,3,2,2,8,1,1,3,4,Genova,Attico,Venduto,B,TopRe,Mare,Parquet
+170,65,2,1,4,30,0,2,2,1,Palermo,Appartamento,Disponibile,E,CasaFacile,Città,Marmo
+400,150,5,3,2,3,1,1,4,4,Bologna,Villa,Disponibile,A,ImmobilPoint,Montagna,Gres
+220,80,3,1,1,20,1,2,3,3,Firenze,Appartamento,In trattativa,C,TopRe,Cortile,Parquet
+190,70,2,1,0,22,0,2,2,1,Roma,Appartamento,Disponibile,D,CasaFacile,Mare,Marmo
+260,90,3,2,2,12,1,1,3,2,Milano,Loft,Venduto,B,ImmobilPoint,Città,Gres
+280,95,3,2,3,10,1,1,3,3,Napoli,Appartamento,Disponibile,C,TopRe,Cortile,Parquet
+310,110,4,2,4,6,1,1,4,4,Bari,Attico,Disponibile,A,CasaFacile,Montagna,Marmo
+160,55,2,1,1,28,0,0,2,0,Torino,Appartamento,Venduto,E,ImmobilPoint,Città,Moquette
+230,85,3,2,2,18,1,2,3,2,Genova,Villa,Disponibile,C,TopRe,Mare,Gres
+185,68,2,1,1,35,0,2,2,1,Palermo,Appartamento,In trattativa,F,CasaFacile,Cortile,Parquet
+195,72,2,1,2,27,0,2,2,1,Firenze,Appartamento,Disponibile,E,ImmobilPoint,Mare,Marmo
+340,125,4,2,3,4,1,1,4,4,Bologna,Villa,Disponibile,A,TopRe,Città,Gres
+275,105,3,2,1,9,1,1,3,3,Roma,Appartamento,Venduto,B,CasaFacile,Montagna,Parquet
+145,50,1,1,0,50,0,0,1,0,Milano,Monolocale,Disponibile,G,ImmobilPoint,Cortile,Marmo
+165,58,2,1,2,30,0,2,2,1,Bari,Appartamento,In trattativa,F,TopRe,Mare,Gres
+205,78,3,1,1,22,1,2,3,2,Torino,Attico,Disponibile,C,CasaFacile,Città,Parquet
+360,135,4,3,2,5,1,1,4,4,Genova,Villa,Venduto,A,ImmobilPoint,Montagna,Marmo
+180,60,2,1,0,38,0,0,2,0,Napoli,Appartamento,Disponibile,E,TopRe,Cortile,Gres
+225,82,3,2,1,18,1,2,3,2,Bologna,Appartamento,In trattativa,C,CasaFacile,Mare,Parquet
+310,115,4,2,2,6,1,1,4,3,Milano,Loft,Disponibile,A,ImmobilPoint,Città,Marmo
+150,48,1,1,0,45,0,0,1,0,Firenze,Monolocale,Venduto,F,TopRe,Cortile,Moquette
+195,70,2,1,2,30,0,2,2,1,Roma,Appartamento,Disponibile,D,CasaFacile,Mare,Gres
+285,98,3,2,3,8,1,1,3,3,Palermo,Attico,Disponibile,B,ImmobilPoint,Città,Parquet
+240,88,3,1,1,16,1,2,3,2,Genova,Appartamento,Venduto,C,TopRe,Cortile,Marmo
+175,65,2,1,1,28,0,2,2,1,Firenze,Appartamento,Disponibile,D,CasaFacile,Montagna,Gres
+330,130,4,3,2,6,1,1,4,4,Roma,Villa,Disponibile,A,TopRe,Mare,Marmo
+185,75,3,1,1,20,1,2,2,2,Milano,Appartamento,Disponibile,C,ImmobilPoint,Città,Parquet
+210,80,3,1,2,12,1,1,3,3,Napoli,Loft,Venduto,B,CasaFacile,Cortile,Gres
+290,105,3,2,3,7,1,1,4,4,Torino,Appartamento,Disponibile,A,TopRe,Montagna,Marmo
+165,60,2,1,0,35,0,2,2,0,Bari,Appartamento,In trattativa,E,ImmobilPoint,Città,Gres
+195,70,2,1,1,25,0,2,2,1,Palermo,Appartamento,Disponibile,D,CasaFacile,Mare,Parquet
+280,100,3,2,2,10,1,1,3,3,Firenze,Attico,Disponibile,B,TopRe,Cortile,Marmo
+155,52,1,1,0,42,0,0,1,0,Roma,Monolocale,Venduto,G,ImmobilPoint,Città,Moquette
+220,85,3,1,1,18,1,2,3,2,Bologna,Appartamento,In trattativa,C,CasaFacile,Montagna,Gres
+305,110,4,2,3,5,1,1,4,4,Genova,Villa,Disponibile,A,TopRe,Mare,Marmo
+175,65,2,1,1,30,0,2,2,1,Napoli,Appartamento,Venduto,F,ImmobilPoint,Cortile,Parquet
+260,95,3,2,2,9,1,1,3,2,Torino,Loft,Disponibile,B,CasaFacile,Città,Gres
+245,90,3,1,1,15,1,2,3,3,Milano,Appartamento,Disponibile,C,TopRe,Montagna,Marmo
+160,58,2,1,0,32,0,2,2,0,Bari,Appartamento,Venduto,E,ImmobilPoint,Cortile,Moquette
+200,75,3,1,1,20,1,2,3,2,Roma,Appartamento,Disponibile,D,CasaFacile,Città,Gres
+350,140,5,3,3,3,1,1,4,4,Firenze,Villa,Disponibile,A,TopRe,Mare,Marmo
+180,60,2,1,1,30,0,2,2,1,Bologna,Appartamento,Venduto,F,ImmobilPoint,Città,Parquet
+230,85,3,2,2,14,1,2,3,2,Napoli,Attico,Disponibile,B,CasaFacile,Montagna,Marmo
+190,72,2,1,1,26,0,2,2,1,Palermo,Appartamento,In trattativa,E,TopRe,Città,Gres
+320,120,4,2,3,6,1,1,4,3,Genova,Villa,Disponibile,A,ImmobilPoint,Mare,Parquet
+150,50,1,1,0,48,0,0,1,0,Bari,Monolocale,Venduto,G,CasaFacile,Cortile,Moquette
+210,78,3,1,1,19,1,2,3,2,Firenze,Appartamento,Disponibile,D,TopRe,Città,Gres
+305,112,4,2,2,7,1,1,4,4,Roma,Villa,Disponibile,A,ImmobilPoint,Montagna,Marmo
+215,82,3,1,1,21,1,2,3,2,Milano,Appartamento,Disponibile,C,CasaFacile,Città,Parquet
+175,66,2,1,2,32,0,2,2,1,Torino,Appartamento,In trattativa,E,ImmobilPoint,Cortile,Gres
+345,128,4,3,3,4,1,1,4,4,Roma,Villa,Disponibile,A,TopRe,Mare,Marmo
+160,55,2,1,0,37,0,2,2,0,Napoli,Monolocale,Venduto,F,CasaFacile,Montagna,Moquette
+280,100,3,2,2,10,1,1,3,3,Bologna,Attico,Disponibile,B,ImmobilPoint,Città,Gres
