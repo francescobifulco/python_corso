@@ -1,0 +1,716 @@
+[
+  {
+    "text": "Il",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "il"
+  },
+  {
+    "text": "vento",
+    "pos": "NOUN",
+    "dep": "nsubj",
+    "lemma": "vento"
+  },
+  {
+    "text": "soffiava",
+    "pos": "VERB",
+    "dep": "ROOT",
+    "lemma": "soffiare"
+  },
+  {
+    "text": "leggero",
+    "pos": "ADJ",
+    "dep": "xcomp",
+    "lemma": "leggero"
+  },
+  {
+    "text": "tra",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "tra"
+  },
+  {
+    "text": "le",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "il"
+  },
+  {
+    "text": "foglie",
+    "pos": "NOUN",
+    "dep": "obl",
+    "lemma": "foglia"
+  },
+  {
+    "text": "degli",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "di il"
+  },
+  {
+    "text": "alberi",
+    "pos": "NOUN",
+    "dep": "nmod",
+    "lemma": "albero"
+  },
+  {
+    "text": "secolari",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "secolare"
+  },
+  {
+    "text": ",",
+    "pos": "PUNCT",
+    "dep": "punct",
+    "lemma": ","
+  },
+  {
+    "text": "\n",
+    "pos": "SPACE",
+    "dep": "dep",
+    "lemma": "\n"
+  },
+  {
+    "text": "creando",
+    "pos": "VERB",
+    "dep": "advcl",
+    "lemma": "creare"
+  },
+  {
+    "text": "un",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "uno"
+  },
+  {
+    "text": "fruscio",
+    "pos": "NOUN",
+    "dep": "obj",
+    "lemma": "fruscio"
+  },
+  {
+    "text": "sommesso",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "sommesso"
+  },
+  {
+    "text": "che",
+    "pos": "SCONJ",
+    "dep": "nsubj",
+    "lemma": "che"
+  },
+  {
+    "text": "rompeva",
+    "pos": "VERB",
+    "dep": "acl:relcl",
+    "lemma": "rompere"
+  },
+  {
+    "text": "il",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "il"
+  },
+  {
+    "text": "silenzio",
+    "pos": "NOUN",
+    "dep": "obj",
+    "lemma": "silenzio"
+  },
+  {
+    "text": "quasi",
+    "pos": "ADV",
+    "dep": "advmod",
+    "lemma": "quasi"
+  },
+  {
+    "text": "\n",
+    "pos": "SPACE",
+    "dep": "dep",
+    "lemma": "\n"
+  },
+  {
+    "text": "irreale",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "irreale"
+  },
+  {
+    "text": "del",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "di il"
+  },
+  {
+    "text": "tardo",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "tardo"
+  },
+  {
+    "text": "pomeriggio",
+    "pos": "NOUN",
+    "dep": "nmod",
+    "lemma": "pomeriggio"
+  },
+  {
+    "text": ".",
+    "pos": "PUNCT",
+    "dep": "punct",
+    "lemma": "."
+  },
+  {
+    "text": "Un",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "uno"
+  },
+  {
+    "text": "gatto",
+    "pos": "NOUN",
+    "dep": "ROOT",
+    "lemma": "gatto"
+  },
+  {
+    "text": "nero",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "nero"
+  },
+  {
+    "text": ",",
+    "pos": "PUNCT",
+    "dep": "punct",
+    "lemma": ","
+  },
+  {
+    "text": "\n",
+    "pos": "SPACE",
+    "dep": "dep",
+    "lemma": "\n"
+  },
+  {
+    "text": "con",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "con"
+  },
+  {
+    "text": "la",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "il"
+  },
+  {
+    "text": "coda",
+    "pos": "NOUN",
+    "dep": "nmod",
+    "lemma": "coda"
+  },
+  {
+    "text": "alta",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "alto"
+  },
+  {
+    "text": "e",
+    "pos": "CCONJ",
+    "dep": "cc",
+    "lemma": "e"
+  },
+  {
+    "text": "un'",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "uno"
+  },
+  {
+    "text": "aria",
+    "pos": "NOUN",
+    "dep": "conj",
+    "lemma": "aria"
+  },
+  {
+    "text": "di",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "di"
+  },
+  {
+    "text": "regale",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "regale"
+  },
+  {
+    "text": "indifferenza",
+    "pos": "NOUN",
+    "dep": "nmod",
+    "lemma": "indifferenza"
+  },
+  {
+    "text": ",",
+    "pos": "PUNCT",
+    "dep": "punct",
+    "lemma": ","
+  },
+  {
+    "text": "\n",
+    "pos": "SPACE",
+    "dep": "dep",
+    "lemma": "\n"
+  },
+  {
+    "text": "attraversò",
+    "pos": "VERB",
+    "dep": "acl",
+    "lemma": "attraversòre"
+  },
+  {
+    "text": "il",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "il"
+  },
+  {
+    "text": "vialetto",
+    "pos": "NOUN",
+    "dep": "obj",
+    "lemma": "vialetto"
+  },
+  {
+    "text": "di",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "di"
+  },
+  {
+    "text": "ghiaia",
+    "pos": "NOUN",
+    "dep": "nmod",
+    "lemma": "ghiaia"
+  },
+  {
+    "text": ",",
+    "pos": "PUNCT",
+    "dep": "punct",
+    "lemma": ","
+  },
+  {
+    "text": "sparendo",
+    "pos": "VERB",
+    "dep": "advcl",
+    "lemma": "sparere"
+  },
+  {
+    "text": "dietro",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "dietro"
+  },
+  {
+    "text": "una",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "uno"
+  },
+  {
+    "text": "siepe",
+    "pos": "NOUN",
+    "dep": "obl",
+    "lemma": "siepe"
+  },
+  {
+    "text": "ben",
+    "pos": "ADV",
+    "dep": "advmod",
+    "lemma": "bene"
+  },
+  {
+    "text": "curata",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "curare"
+  },
+  {
+    "text": ".",
+    "pos": "PUNCT",
+    "dep": "punct",
+    "lemma": "."
+  },
+  {
+    "text": "\n",
+    "pos": "SPACE",
+    "dep": "dep",
+    "lemma": "\n"
+  },
+  {
+    "text": "Lontano",
+    "pos": "ADV",
+    "dep": "advmod",
+    "lemma": "Lontano"
+  },
+  {
+    "text": ",",
+    "pos": "PUNCT",
+    "dep": "punct",
+    "lemma": ","
+  },
+  {
+    "text": "il",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "il"
+  },
+  {
+    "text": "suono",
+    "pos": "NOUN",
+    "dep": "ROOT",
+    "lemma": "suono"
+  },
+  {
+    "text": "indistinto",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "indistinto"
+  },
+  {
+    "text": "di",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "di"
+  },
+  {
+    "text": "una",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "uno"
+  },
+  {
+    "text": "campana",
+    "pos": "NOUN",
+    "dep": "obl",
+    "lemma": "campana"
+  },
+  {
+    "text": "batteva",
+    "pos": "VERB",
+    "dep": "acl",
+    "lemma": "battere"
+  },
+  {
+    "text": "le",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "il"
+  },
+  {
+    "text": "ore",
+    "pos": "NOUN",
+    "dep": "obj",
+    "lemma": "ora"
+  },
+  {
+    "text": ",",
+    "pos": "PUNCT",
+    "dep": "punct",
+    "lemma": ","
+  },
+  {
+    "text": "\n",
+    "pos": "SPACE",
+    "dep": "dep",
+    "lemma": "\n"
+  },
+  {
+    "text": "scandendo",
+    "pos": "VERB",
+    "dep": "advcl",
+    "lemma": "scandere"
+  },
+  {
+    "text": "il",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "il"
+  },
+  {
+    "text": "tempo",
+    "pos": "NOUN",
+    "dep": "obj",
+    "lemma": "tempo"
+  },
+  {
+    "text": "in",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "in"
+  },
+  {
+    "text": "un",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "uno"
+  },
+  {
+    "text": "ritmo",
+    "pos": "NOUN",
+    "dep": "obl",
+    "lemma": "ritmo"
+  },
+  {
+    "text": "antico",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "antico"
+  },
+  {
+    "text": "e",
+    "pos": "CCONJ",
+    "dep": "cc",
+    "lemma": "e"
+  },
+  {
+    "text": "rassicurante",
+    "pos": "ADJ",
+    "dep": "conj",
+    "lemma": "rassicurante"
+  },
+  {
+    "text": ".",
+    "pos": "PUNCT",
+    "dep": "punct",
+    "lemma": "."
+  },
+  {
+    "text": "\n",
+    "pos": "SPACE",
+    "dep": "dep",
+    "lemma": "\n"
+  },
+  {
+    "text": "La",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "il"
+  },
+  {
+    "text": "luce",
+    "pos": "NOUN",
+    "dep": "nsubj",
+    "lemma": "luce"
+  },
+  {
+    "text": "dorata",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "dorato"
+  },
+  {
+    "text": "del",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "di il"
+  },
+  {
+    "text": "sole",
+    "pos": "NOUN",
+    "dep": "nmod",
+    "lemma": "sole"
+  },
+  {
+    "text": "calante",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "calante"
+  },
+  {
+    "text": "si",
+    "pos": "PRON",
+    "dep": "expl",
+    "lemma": "si"
+  },
+  {
+    "text": "rifletteva",
+    "pos": "VERB",
+    "dep": "ROOT",
+    "lemma": "riflettere"
+  },
+  {
+    "text": "sulle",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "su il"
+  },
+  {
+    "text": "finestre",
+    "pos": "NOUN",
+    "dep": "obl",
+    "lemma": "finestra"
+  },
+  {
+    "text": "\n",
+    "pos": "SPACE",
+    "dep": "dep",
+    "lemma": "\n"
+  },
+  {
+    "text": "di",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "di"
+  },
+  {
+    "text": "una",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "uno"
+  },
+  {
+    "text": "vecchia",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "vecchio"
+  },
+  {
+    "text": "casa",
+    "pos": "NOUN",
+    "dep": "nmod",
+    "lemma": "casa"
+  },
+  {
+    "text": "in",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "in"
+  },
+  {
+    "text": "mattoni",
+    "pos": "NOUN",
+    "dep": "nmod",
+    "lemma": "mattone"
+  },
+  {
+    "text": "rossi",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "rosso"
+  },
+  {
+    "text": ",",
+    "pos": "PUNCT",
+    "dep": "punct",
+    "lemma": ","
+  },
+  {
+    "text": "accendendo",
+    "pos": "VERB",
+    "dep": "advcl",
+    "lemma": "accendere"
+  },
+  {
+    "text": "brevi",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "breve"
+  },
+  {
+    "text": "lampi",
+    "pos": "NOUN",
+    "dep": "obj",
+    "lemma": "lampo"
+  },
+  {
+    "text": "di",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "di"
+  },
+  {
+    "text": "\n",
+    "pos": "SPACE",
+    "dep": "dep",
+    "lemma": "\n"
+  },
+  {
+    "text": "un",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "uno"
+  },
+  {
+    "text": "intenso",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "intenso"
+  },
+  {
+    "text": "colore",
+    "pos": "NOUN",
+    "dep": "nmod",
+    "lemma": "colore"
+  },
+  {
+    "text": "arancione",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "arancione"
+  },
+  {
+    "text": ".",
+    "pos": "PUNCT",
+    "dep": "punct",
+    "lemma": "."
+  },
+  {
+    "text": "Tutto",
+    "pos": "PRON",
+    "dep": "nsubj",
+    "lemma": "tutto"
+  },
+  {
+    "text": "sembrava",
+    "pos": "VERB",
+    "dep": "ROOT",
+    "lemma": "sembrare"
+  },
+  {
+    "text": "sospeso",
+    "pos": "VERB",
+    "dep": "xcomp",
+    "lemma": "sospendere"
+  },
+  {
+    "text": "in",
+    "pos": "ADP",
+    "dep": "case",
+    "lemma": "in"
+  },
+  {
+    "text": "un'",
+    "pos": "DET",
+    "dep": "det",
+    "lemma": "uno"
+  },
+  {
+    "text": "attesa",
+    "pos": "NOUN",
+    "dep": "obl",
+    "lemma": "attesa"
+  },
+  {
+    "text": "quieta",
+    "pos": "ADJ",
+    "dep": "amod",
+    "lemma": "quieto"
+  },
+  {
+    "text": ".",
+    "pos": "PUNCT",
+    "dep": "punct",
+    "lemma": "."
+  }
+]

@@ -1,0 +1,158 @@
+[
+    {
+        "text": "vento",
+        "pos": "NOUN",
+        "dep": "nsubj",
+        "lemma": "vento"
+    },
+    {
+        "text": "foglie",
+        "pos": "NOUN",
+        "dep": "obl",
+        "lemma": "foglia"
+    },
+    {
+        "text": "alberi",
+        "pos": "NOUN",
+        "dep": "nmod",
+        "lemma": "albero"
+    },
+    {
+        "text": "fruscio",
+        "pos": "NOUN",
+        "dep": "obj",
+        "lemma": "fruscio"
+    },
+    {
+        "text": "silenzio",
+        "pos": "NOUN",
+        "dep": "obj",
+        "lemma": "silenzio"
+    },
+    {
+        "text": "pomeriggio",
+        "pos": "NOUN",
+        "dep": "nmod",
+        "lemma": "pomeriggio"
+    },
+    {
+        "text": "gatto",
+        "pos": "NOUN",
+        "dep": "ROOT",
+        "lemma": "gatto"
+    },
+    {
+        "text": "coda",
+        "pos": "NOUN",
+        "dep": "nmod",
+        "lemma": "coda"
+    },
+    {
+        "text": "aria",
+        "pos": "NOUN",
+        "dep": "conj",
+        "lemma": "aria"
+    },
+    {
+        "text": "indifferenza",
+        "pos": "NOUN",
+        "dep": "nmod",
+        "lemma": "indifferenza"
+    },
+    {
+        "text": "vialetto",
+        "pos": "NOUN",
+        "dep": "obj",
+        "lemma": "vialetto"
+    },
+    {
+        "text": "ghiaia",
+        "pos": "NOUN",
+        "dep": "nmod",
+        "lemma": "ghiaia"
+    },
+    {
+        "text": "siepe",
+        "pos": "NOUN",
+        "dep": "obl",
+        "lemma": "siepe"
+    },
+    {
+        "text": "suono",
+        "pos": "NOUN",
+        "dep": "ROOT",
+        "lemma": "suono"
+    },
+    {
+        "text": "campana",
+        "pos": "NOUN",
+        "dep": "obl",
+        "lemma": "campana"
+    },
+    {
+        "text": "ore",
+        "pos": "NOUN",
+        "dep": "obj",
+        "lemma": "ora"
+    },
+    {
+        "text": "tempo",
+        "pos": "NOUN",
+        "dep": "obj",
+        "lemma": "tempo"
+    },
+    {
+        "text": "ritmo",
+        "pos": "NOUN",
+        "dep": "obl",
+        "lemma": "ritmo"
+    },
+    {
+        "text": "luce",
+        "pos": "NOUN",
+        "dep": "nsubj",
+        "lemma": "luce"
+    },
+    {
+        "text": "sole",
+        "pos": "NOUN",
+        "dep": "nmod",
+        "lemma": "sole"
+    },
+    {
+        "text": "finestre",
+        "pos": "NOUN",
+        "dep": "obl",
+        "lemma": "finestra"
+    },
+    {
+        "text": "casa",
+        "pos": "NOUN",
+        "dep": "nmod",
+        "lemma": "casa"
+    },
+    {
+        "text": "mattoni",
+        "pos": "NOUN",
+        "dep": "nmod",
+        "lemma": "mattone"
+    },
+    {
+        "text": "lampi",
+        "pos": "NOUN",
+        "dep": "obj",
+        "lemma": "lampo"
+    },
+    {
+        "text": "colore",
+        "pos": "NOUN",
+        "dep": "nmod",
+        "lemma": "colore"
+    },
+    {
+        "text": "attesa",
+        "pos": "NOUN",
+        "dep": "obl",
+        "lemma": "attesa"
+    }
+]
