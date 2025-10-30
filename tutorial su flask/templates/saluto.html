@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Saluto Flask</title>
+</head>
+<body>
+    <h1>Ciao, {{ nome }}!</h1>
+    
+    {% if elementi %}
+    <ul>
+        {% for elemento in elementi %}
+        <li>{{ elemento }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+</body>
+</html>
