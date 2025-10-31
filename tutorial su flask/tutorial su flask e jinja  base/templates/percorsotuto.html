@@ -1,0 +1,45 @@
+{# Questo file estende il template base 'index.html' #}
+{% extends 'index.html' %}
+
+{# Inizia il blocco 'content' dove verrà 
+inserito il contenuto specifico di questa pagina #}
+{% block content %}
+
+{# Inizio del blocco di controllo IF-ELIF-ELSE di Jinja2 #}
+{# Controlla se la variabile 'nome' è uguale a 'Flask' #}
+{% if nome == 'Flask' %}
+
+{# Titolo del tutorial - ora con un tag <h3> #}
+<h3>📘 Questo è il tutorial su {{ nome }}</h3>
+
+<br>{# Aggiunge una riga di separazione #}
+
+{# Breve descrizione - ora con un tag <small> 
+per un testo meno prominente #}
+<small>Elenco di tutte le lezioni disponibili per questo tutorial:</small>
+
+{# Inizia una lista non ordinata (<ul>) per elencare le lezioni #}
+    <ul>
+        {# Elemento della lista per la Lezione 1 #}
+        <li>Lezione 1: Introduzione di Flask e render_template</li>
+        {# Elemento della lista per la Lezione 2 #}
+        <li>Lezione 2: Jinja</li>
+    </ul>
+
+{# Altrimenti, se 'nome' è uguale a 'lista' #}
+{% elif nome == 'lista' %}
+    
+    {# Titolo per la lista dei tutorial - ora con un tag <h3> #}
+    <h3>📚 Lista di tutti i tutorial disponibili</h3>
+
+{# Altrimenti (se 'nome' non è né 'Flask' né 'lista') #}
+{% else %}
+    
+    {# Messaggio di avviso - ora con un tag <h3> #}
+    <h3>⚠️ Attenzione: Questo non è il tutorial giusto!</h3>
+
+{# Fine del blocco di controllo IF-ELIF-ELSE #}
+{% endif %}
+
+{# Fine del blocco 'content' #}
+{% endblock content %}
