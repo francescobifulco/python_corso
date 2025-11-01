@@ -1,0 +1,16 @@
+{% extends 'index.html' %}
+{% block content %}
+<form action="{{url_for('page_new')}}">
+    <label for="first">Nome del Tutorial:</label>
+    <input type="text" name="nome_tutorial">
+    <label for="last">Soggetto del Tutorial:</label>
+    <input type="text" name="oggetto_tutorial">
+    <input type="submit" value="Submit Form">
+</form>
+
+<br>
+<ul>
+    <li>Nome Tutorial: <b>{{nome_tutorial}}</b></li>
+    <li>Soggetto Tutorial: <b>{{oggetto_tutorial}}</b></li>
+</ul>
+{% endblock content %}

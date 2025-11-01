@@ -25,13 +25,20 @@ per un testo meno prominente #}
         {# Elemento della lista per la Lezione 2 #}
         <li>Lezione 2: Jinja</li>
     </ul>
+    <br>
+    <a href="{{url_for('jinja')}}">Clicca qui per andare al tutorial di jinja</a>
 
 {# Altrimenti, se 'nome' è uguale a 'lista' #}
 {% elif nome == 'lista' %}
     
     {# Titolo per la lista dei tutorial - ora con un tag <h3> #}
     <h3>📚 Lista di tutti i tutorial disponibili</h3>
-
+    <ul>
+        {% for corso in pagina_lista %}
+        <li>{{corso}}</li>
+        {%endfor%}
+    </ul>
+    <img src="../static/images.jpg" alt="titolo del immagine">
 {# Altrimenti (se 'nome' non è né 'Flask' né 'lista') #}
 {% else %}
     
