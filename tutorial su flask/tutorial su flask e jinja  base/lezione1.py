@@ -3,12 +3,18 @@ from flask import Flask, render_template, url_for, request # Importa le classi e
 from flask_wtf import FlaskForm # Importa la classe base per i form da Flask-WTF
 from wtforms import( # Importa i tipi di campo (widgets) da WTForms
     StringField, # Campo di input per stringhe di testo
-    SubmitField # Campo per il bottone di invio (submit)
+    SubmitField, # Campo per il bottone di invio (submit)
+    BooleanField,
+    RadioField,
+    SelectField,
+    TextAreaField
 )
 
 # Crea un'istanza dell'applicazione 
 # Flask. __name__ è il nome del modulo corrente.
 app = Flask(__name__)
+
+app.config['SECRET_KEY'] = 'chiavedisicurezza'
 
 # --- Blocco 2: Routing Base ---
 
@@ -102,15 +108,33 @@ def page_form():
 
 # --- Blocco 6: Definizione della Classe Base e Form WTForms (Incompleto) ---
     
-class FormBase():
-    nome = ''
-    pulsante = ''
-    soggetto = ''
+class FormBase(FlaskForm):
+    nome = StringField('Nome del tutorial')
+    pulsante = SubmitField('Submit')
+    tutorial_act= BooleanField('Tutorial attivo')
+    diffecolta = RadioField('Difficolta del tutorial{: ', 
+                            choices=[{'facile', 'Facile'},
+                                     {'medio', 'Medio'}, 
+                                     {'avanzato', 'Avanzato'}])
+    sito_tutorial = SelectField('Sito online del tutorial', 
+                                choices=[{'github', }])
+    soggetto = StringField('Soggetto del tutorial')
 
 @app.route('/tutorial/nuovo/facile/', methods=['GET', 'POST'])
 def form_avanzato():
-    name = False
-    form = 
+    nome = False
+    soggetto = False
+    form = FormBase()
+    if form.validate_on_submit():
+        nome = form.nome.data
+        soggetto = form.soggetto.data
+        form.nome.data = ''
+        form.soggetto.data = ''
+    
+    return render_template('tutorialsimpli.html', 
+                           tutorial_form=form, 
+                           tutorial_name=nome,
+                           tutorial_soggetto=soggetto)
 
 # --- Blocco 7: Avvio dell'Applicazione ---
 

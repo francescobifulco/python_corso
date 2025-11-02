@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% block content %}
+<br>
+<h1>Nuovo Tutorial</h1>
+<form action="" method="post">
+    {{tutorial_form.hidden_tag()}}
+    {{tutorial_form.nome.label}}{{tutorial_form.nome()}}
+    {{tutorial_form.soggetto.label}}{{tutorial_form.soggetto()}}
+    {{tutorial_form.pultsante()}}
+</form>
+
+<br>
+<h2>Informazione del Tutorial</h2>
+<ul>
+    <li>Nome del tutorial: <b>{{tutorial_name}}</b></li>
+    <li>Soggetto del tutorial: <b>{{tutorial_soggetto}}</b></li>
+</ul>
+
+{% endblock content %}
