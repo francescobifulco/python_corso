@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<h2>Informazione del Tutorial</h2>
+<ul>
+    <li>Nome del tutorial: <b>{{session['nome']}}</b></li>
+    <li>Soggetto del tutorial: <b>{{session['soggetto']}}</b></li>
+    <li>tutorial Attivo: <b>{{session['tutorial_act']}}</b></li>
+    <li>difficolta del tutorial: <b>{{session['difficolta']}}</b></li>
+    <li>Piattaforma : <b>{{session['sito_tutorial']}}</b></li>
+    <li>Feedback del tutorial: <b>{{session['feedback']}}</b></li>
+</ul>
+
+{% endblock content %}

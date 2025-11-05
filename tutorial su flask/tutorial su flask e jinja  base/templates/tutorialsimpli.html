@@ -4,16 +4,20 @@
 <h1>Nuovo Tutorial</h1>
 <form action="" method="post">
     {{tutorial_form.hidden_tag()}}
-    {{tutorial_form.nome.label}}{{tutorial_form.nome()}}
-    {{tutorial_form.soggetto.label}}{{tutorial_form.soggetto()}}
-    {{tutorial_form.pultsante()}}
+    <br>
+    {{tutorial_form.nome.label}} {{tutorial_form.nome()}}
+    <br>
+    {{tutorial_form.soggetto.label}} {{tutorial_form.soggetto()}}
+    <br>
+    {{tutorial_form.tutorial_act.label}} {{tutorial_form.tutorial_act()}}
+    <br>
+    {{tutorial_form.difficolta.label}} {{tutorial_form.difficolta()}}
+    <br>
+    {{tutorial_form.sito_tutorial.label}} {{tutorial_form.sito_tutorial()}}
+    <br>
+    {{tutorial_form.feedback.label}} {{tutorial_form.feedback()}}
+    <br>
+    {{tutorial_form.pulsante()}}
 </form>
-
-<br>
-<h2>Informazione del Tutorial</h2>
-<ul>
-    <li>Nome del tutorial: <b>{{tutorial_name}}</b></li>
-    <li>Soggetto del tutorial: <b>{{tutorial_soggetto}}</b></li>
-</ul>
 
 {% endblock content %}
