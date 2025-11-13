@@ -1,0 +1,318 @@
+
+**8. Concatenazione e stacking**
+
+* Genera due array 3×3 con numeri casuali.
+* Concatenali orizzontalmente e verticalmente.
+* Calcola la somma di ciascuna riga e colonna della matrice risultante.
+
+---
+
+**9. Randomizzazione e riproducibilità**
+
+* Imposta un seed casuale (es. `np.random.seed(42)`).
+* Genera un array 4×5 di numeri casuali tra -1 e 1.
+* Calcola i valori assoluti e trova la posizione del massimo valore assoluto.
+
+---
+
+**10. Ordinamento e ranking**
+
+* Crea un array casuale di 20 numeri float.
+* Ordina l’array in ordine decrescente.
+* Trova la posizione del 3° valore più grande e sostituiscilo con la media di tutti i valori.
+
+---
+
+### 🔹 **Sezione 2 – Operazioni su matrici (Esercizi 11–20)**
+
+**11. Moltiplicazione matriciale**
+
+* Crea due matrici A (3×4) e B (4×3) con numeri interi casuali.
+* Esegui la moltiplicazione matriciale `A @ B`.
+* Calcola la traccia e la somma degli elementi sulla diagonale.
+
+---
+
+**12. Determinante e inversa**
+
+* Genera una matrice quadrata 4×4 casuale.
+* Calcola il determinante e verifica se la matrice è invertibile.
+* Se sì, calcola la matrice inversa e verifica la correttezza tramite `A @ A_inv ≈ I`.
+
+---
+
+**13. Trasposizioni e simmetria**
+
+* Crea una matrice 5×5 casuale.
+* Trasponila e confronta se è simmetrica.
+* Rendi la matrice simmetrica forzatamente e calcola la media dei valori sopra la diagonale.
+
+---
+
+**14. Matrici sparse simulate**
+
+* Crea una matrice 10×10 di zeri.
+* Inserisci casualmente 10 valori diversi da zero.
+* Conta quanti valori non nulli ci sono e sostituiscili con la loro radice quadrata.
+
+---
+
+**15. Operazioni di broadcasting**
+
+* Crea un array 5×5 con valori da 0 a 24.
+* Sottrai un vettore riga di lunghezza 5 ai valori della matrice.
+* Verifica come NumPy gestisce il broadcasting e mostra il risultato.
+
+---
+
+**16. Normalizzazione di dati**
+
+* Genera un array 100×3 di valori casuali (simulando 100 osservazioni di 3 variabili).
+* Normalizza ciascuna colonna tra 0 e 1.
+* Calcola la media e la deviazione standard delle colonne normalizzate.
+
+---
+
+**17. Calcolo di autovalori e autovettori**
+
+* Genera una matrice quadrata 3×3 casuale.
+* Calcola gli autovalori e autovettori.
+* Verifica la relazione `A @ v = λv` per ciascuna coppia.
+
+---
+
+**18. Prodotto vettoriale e scalare**
+
+* Crea due vettori tridimensionali casuali.
+* Calcola sia il prodotto scalare che il vettoriale.
+* Verifica ortogonalità se il prodotto scalare è zero.
+
+---
+
+**19. Operazioni di aggregazione**
+
+* Genera una matrice 8×8 con numeri casuali tra 0 e 1.
+* Calcola: media globale, somma per riga, valore minimo e massimo per colonna.
+* Crea un array con la posizione dell’elemento massimo globale.
+
+---
+
+**20. Calcolo cumulativo**
+
+* Crea un array di 20 numeri casuali interi.
+* Calcola la somma cumulativa e il prodotto cumulativo.
+* Mostra il valore medio del prodotto cumulativo ogni 5 elementi.
+
+---
+
+### 🔹 **Sezione 3 – Manipolazione avanzata e simulazioni (Esercizi 21–35)**
+
+**21. Flatten e ristrutturazione complessa**
+
+* Crea una matrice 4×6 casuale.
+* “Flattena” la matrice, ordina i valori, poi ricostruisci una 6×4 ordinata per colonne.
+
+---
+
+**22. Simulazione lancio di dadi**
+
+* Simula 1.000 lanci di due dadi.
+* Calcola la distribuzione delle somme (da 2 a 12).
+* Visualizza la probabilità di ciascun risultato in percentuale.
+
+---
+
+**23. Statistiche di una popolazione casuale**
+
+* Genera un campione di 10.000 altezze normalmente distribuite (media 170, σ=10).
+* Calcola media, mediana, moda (approssimata) e percentili 25–75.
+
+---
+
+**24. Simulazione Monte Carlo: π**
+
+* Genera 1.000.000 punti casuali (x, y) ∈ [0,1]².
+* Calcola la frazione di punti nel cerchio unitario e stima π.
+* Confronta con `np.pi` e calcola l’errore relativo.
+
+---
+
+**25. Maschere su matrici bidimensionali**
+
+* Crea una matrice 10×10 di valori casuali tra -10 e 10.
+* Crea una maschera per selezionare solo i valori positivi maggiori di 5.
+* Sostituisci tutti i valori negativi con la media dei positivi.
+
+---
+
+**26. Ricerca e sostituzione condizionale**
+
+* Genera un array 20×20 casuale tra 0 e 1.
+* Trova tutti i valori compresi tra 0.3 e 0.7 e sostituiscili con `np.nan`.
+* Conta quanti valori NaN risultano.
+
+---
+
+**27. Gestione dei NaN**
+
+* Genera un array con valori casuali e inserisci manualmente 10 NaN.
+* Calcola la media ignorando i NaN.
+* Sostituisci i NaN con la media delle colonne.
+
+---
+
+**28. Uso di `np.where` e condizioni multiple**
+
+* Crea un array 1D di 50 numeri casuali.
+* Crea un secondo array dove:
+
+  * se valore < 0.3 → 0
+  * tra 0.3 e 0.7 → 1
+  * altrimenti → 2.
+
+---
+
+**29. Confronto di array**
+
+* Genera due array di 100 elementi casuali.
+* Trova quanti elementi coincidono nella stessa posizione.
+* Calcola la differenza media assoluta tra i due.
+
+---
+
+**30. Generazione di sequenze temporali**
+
+* Crea un array di 365 date (anno fittizio 2025).
+* Associa a ciascun giorno una temperatura casuale.
+* Calcola la media mensile.
+
+---
+
+**31. Campionamento casuale**
+
+* Crea un array di 1.000 valori interi.
+* Estrai un campione di 50 elementi senza sostituzione.
+* Calcola la media del campione e confrontala con quella della popolazione.
+
+---
+
+**32. Uso di `np.unique`**
+
+* Genera un array di 100 elementi interi (da 0 a 20).
+* Trova i valori unici e la loro frequenza.
+* Mostra il valore più frequente e la sua percentuale.
+
+---
+
+**33. Differenze numeriche**
+
+* Crea un array con una funzione sinusoidale `y = sin(x)` per x in [0, 2π].
+* Calcola la derivata numerica usando `np.diff`.
+* Confronta con il valore analitico di `cos(x)`.
+
+---
+
+**34. Interpolazione semplice**
+
+* Genera 10 punti equidistanti con valori y casuali.
+* Usa `np.interp` per stimare i valori intermedi in 100 punti.
+* Confronta la media dei valori interpolati con quella originale.
+
+---
+
+**35. Simulazione di rumore e segnale**
+
+* Crea un segnale sinusoidale con 1000 punti.
+* Aggiungi rumore gaussiano.
+* Calcola il rapporto segnale/rumore e filtra i valori oltre ±2σ.
+
+---
+
+### 🔹 **Sezione 4 – Esercizi complessi e applicativi (Esercizi 36–45)**
+
+**36. Elaborazione di immagine (simulata)**
+
+* Crea una “finta immagine” 256×256 con valori casuali 0–255.
+* Normalizza i valori tra 0 e 1.
+* Calcola il valore medio per quadrante (4 sezioni).
+
+---
+
+**37. Analisi di correlazione**
+
+* Genera due vettori 1D di 1.000 valori casuali correlati (y = 0.8x + rumore).
+* Calcola il coefficiente di correlazione.
+* Visualizza la relazione numerica e discuti il risultato.
+
+---
+
+**38. Creazione di una matrice di covarianza**
+
+* Genera 1000 osservazioni di 3 variabili.
+* Calcola la matrice di covarianza con `np.cov`.
+* Verifica che la matrice sia simmetrica.
+
+---
+
+**39. Simulazione di cammino casuale (Random Walk)**
+
+* Simula 10.000 passi di un cammino 1D con incrementi ±1 casuali.
+* Calcola la posizione finale e la deviazione standard dopo 10.000 passi.
+
+---
+
+**40. Calcolo di convoluzione**
+
+* Crea due array 1D (uno come “segnale”, l’altro come “filtro”).
+* Calcola la convoluzione con `np.convolve`.
+* Spiega la differenza tra modalità “valid”, “same” e “full”.
+
+---
+
+**41. Generazione di griglie e funzioni 2D**
+
+* Crea una griglia 100×100 di coordinate x,y in [-5,5].
+* Calcola `z = exp(-(x² + y²))`.
+* Calcola il valore medio di z e il punto di massimo.
+
+---
+
+**42. PCA semplificata (senza librerie esterne)**
+
+* Genera dati 2D correlati.
+* Centra i dati, calcola la matrice di covarianza.
+* Estrai autovalori/autovettori e proietta i dati sul primo asse principale.
+
+---
+
+**43. Simulazione di temperature stagionali**
+
+* Genera una serie giornaliera per 3 anni.
+* Usa una combinazione di seno per simulare l’andamento stagionale più rumore casuale.
+* Calcola medie mensili e deviazioni standard.
+
+---
+
+**44. Operazioni su blocchi di matrice**
+
+* Crea una matrice 12×12 e dividila in 9 blocchi 4×4.
+* Calcola la somma di ogni blocco e ricostruisci una matrice 3×3 con questi valori.
+
+---
+
+**45. Benchmark e confronto di performance**
+
+* Confronta i tempi di calcolo tra un ciclo `for` classico in Python e le operazioni NumPy per la somma di 10 milioni di numeri.
+* Usa `time.time()` per misurare.
+* Mostra il guadagno percentuale in velocità.
+
+---
+
+Se vuoi, posso anche:
+
+* 🔹 Fornire **le soluzioni passo-passo** per ciascun esercizio,
+* 🔹 Oppure impacchettarli in un **file Jupyter Notebook (.ipynb)** già formattato per l’esecuzione.
+
+Vuoi che prepari anche le **soluzioni dettagliate** o il **notebook completo**?
+
+crea 45 esercizi sulla libreria numpy in modo procedurale gli esercizi devono essere lunghi
