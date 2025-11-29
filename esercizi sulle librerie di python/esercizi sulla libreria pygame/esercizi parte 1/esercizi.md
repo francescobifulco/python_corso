@@ -1,10 +1,4 @@
-### **5. Spostamento di un punto con le frecce**
 
-Disegna un piccolo cerchio che rappresenta un punto. Permetti all’utente di muoverlo con le frecce direzionali, aggiornando ad ogni frame la sua posizione.
-
-### **6. Gestione del movimento fluido**
-
-Modifica l’esercizio precedente in modo che il movimento sia fluido anche tenendo premuti i tasti. Implementa la *continuous key press detection* tramite `pygame.key.get_pressed()`.
 
 ### **7. Cambiare velocità tramite tastiera**
 
@@ -183,3 +177,26 @@ Crea un platformer semplice:
 * rilevamento collisioni
 * correzione della penetrazione (pushback)
 * riconoscimento collisione laterale, superiore e inferiore
+
+46 Esercizio Pygame: "Evita il nemico!"
+Obiettivo
+
+Creare una finestra di gioco in cui:
+
+il giocatore può muovere un quadrato con le frecce della tastiera;
+
+un nemico si muove automaticamente da sinistra a destra;
+
+quando il giocatore collide con il nemico, il gioco stampa “Collisione!” e si chiude.
+
+Concetti coinvolti
+
+inizializzazione di Pygame
+
+gestione degli input da tastiera
+
+aggiornamento della posizione degli oggetti
+
+rilevamento delle collisioni con colliderect
+
+ciclo principale del gioco

@@ -19,8 +19,8 @@ FPS = 60 # 60 frame al secondo
 player_size = 50
 player_x = LARGHEZZA // 2 - player_size // 2
 player_y = ALTEZZA - player_size - 10
-player_vel = 5 # Velocità di movimento
 player_rect = pygame.Rect(player_x, player_y, player_size, player_size)
+player_vel = 5
 
 running = True
 while running:
