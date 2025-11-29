@@ -1,17 +1,3 @@
-
-
-### **7. Cambiare velocità tramite tastiera**
-
-Permetti all’utente di aumentare o diminuire la velocità del punto usando i tasti + e –. Impedisci che la velocità diventi negativa.
-
-### **8. Aggiungere un contatore di FPS**
-
-Visualizza sullo schermo gli FPS del programma aggiornati ogni frame, usando un oggetto `Clock()`.
-
-### **9. Rilevare clic del mouse**
-
-Disegna un cerchio fisso sullo schermo. Ogni volta che l’utente clicca con il mouse all’interno del cerchio, cambia colore.
-
 ### **10. Mostrare la posizione del mouse**
 
 Mostra sullo schermo, tramite testo renderizzato, la posizione corrente del cursore. Aggiornala ogni frame.
