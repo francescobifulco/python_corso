@@ -1,31 +1,3 @@
-### **10. Mostrare la posizione del mouse**
-
-Mostra sullo schermo, tramite testo renderizzato, la posizione corrente del cursore. Aggiornala ogni frame.
-
----
-
-## 🎯 **SEZIONE 2 — INPUT E MOVIMENTO (11–20)**
-
-### **11. Movimento con attrito**
-
-Crea un oggetto che continua a muoversi anche dopo aver rilasciato i tasti, rallentando gradualmente grazie a un attrito simulato.
-
-### **12. Movimento limitato ai bordi**
-
-Crea un personaggio che può essere mosso, ma non può uscire dai bordi della finestra. Se raggiunge un bordo, la velocità deve azzerarsi.
-
-### **13. Movimento continuo orizzontale/verticale**
-
-Implementa dei pulsanti che attivano spostamenti interni allo schermo: premi “d” per far muovere un quadrato automaticamente a destra, “a” per sinistra, “s” per fermarlo.
-
-### **14. Rotazione di un'immagine**
-
-Carica un’immagine (per es. un player) e ruotala quando il giocatore preme i tasti ← e →. Mantieni il centro dell’immagine costante.
-
-### **15. Spostamento di un'immagine con rotazione alle frecce**
-
-Muovi un'immagine nella direzione in cui è ruotata (simile a un’astronave). Usa un vettore direzionale basato sull’angolo.
-
 ### **16. Applicare gravità a un oggetto**
 
 Simula la caduta libera: un rettangolo cade verso il basso con accelerazione costante. Impedisci che esca dallo schermo.
