@@ -1,11 +1,3 @@
-### **16. Applicare gravità a un oggetto**
-
-Simula la caduta libera: un rettangolo cade verso il basso con accelerazione costante. Impedisci che esca dallo schermo.
-
-### **17. Salto semplice con gravità**
-
-Aggiungi la possibilità di far saltare l’oggetto con la barra spaziatrice. Impedisci salti multipli mentre è in aria.
-
 ### **18. Salto doppio (double jump)**
 
 Come sopra, ma con un massimo di due salti concessi prima di toccare il suolo.
