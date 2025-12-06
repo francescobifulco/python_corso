@@ -1,6 +1,6 @@
 import pygame
 #import sys
-import time
+#import time
 
 pygame.init()
 
@@ -23,15 +23,20 @@ FINESTRA = pygame.display.set_mode((ALTEZZA, LARGHEZZA))
 pygame.display.set_caption(TITOLO)
 FINESTRA.fill(ROSSO)
 
+loop = True
+while loop:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            loop = False
+    
+    surf0 = pygame.Surface((100, 100))
+    surf1 = pygame.Surface((50, 50))
+    surf1.fill(BLUE)
 
-surf0 = pygame.Surface((100, 100))
-surf1 = pygame.Surface((50, 50))
-surf1.fill(BLUE)
+    surf0.blit(surf1, (0, 0))
+    FINESTRA.blit(surf0, (100, 100))
 
-surf0.blit(surf1, (0, 0))
-FINESTRA.blit(surf0, (100, 100))
-
-pygame.display.flip()
-time.sleep(10)
+    pygame.display.update()
+    #time.sleep(2)
 
 pygame.quit()
