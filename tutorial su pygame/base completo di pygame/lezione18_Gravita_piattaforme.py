@@ -6,7 +6,9 @@ pygame.init()
 # -----------------------
 LARGHEZZA = 800
 ALTEZZA = 600
+TITOLO = 'Le gestione sulla gravita sulla logica dei piattaforme'
 SCHERMO = pygame.display.set_mode((LARGHEZZA, ALTEZZA))
+pygame.display.set_caption(TITOLO)
 clock = pygame.time.Clock()
 
 # Colori
